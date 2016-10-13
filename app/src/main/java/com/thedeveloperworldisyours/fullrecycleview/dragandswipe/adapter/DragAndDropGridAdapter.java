@@ -22,30 +22,31 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by javierg on 12/10/2016.
+ * Created by javierg on 13/10/2016.
  */
 
-public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapter.ItemViewHolder>
+public class DragAndDropGridAdapter extends RecyclerView.Adapter<DragAndDropGridAdapter.ItemViewHolder>
         implements ItemTouchHelperAdapter {
 
     private final List<String> mItems = new ArrayList<>();
 
     private final OnStartDragListener mDragStartListener;
 
-    public RecyclerListAdapter(Context context, OnStartDragListener dragStartListener) {
+    public DragAndDropGridAdapter(Context context, OnStartDragListener dragStartListener) {
         mDragStartListener = dragStartListener;
         mItems.addAll(Arrays.asList(context.getResources().getStringArray(R.array.dummy_items)));
     }
 
     @Override
-    public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.drag_list_item, parent, false);
-        ItemViewHolder itemViewHolder = new ItemViewHolder(view);
+    public DragAndDropGridAdapter.ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.drag_drop_list_item, parent, false);
+        DragAndDropGridAdapter.ItemViewHolder itemViewHolder = new DragAndDropGridAdapter.ItemViewHolder(view);
         return itemViewHolder;
     }
 
     @Override
     public void onBindViewHolder(final ItemViewHolder holder, int position) {
+
         holder.textView.setText(mItems.get(position));
 
         // Start a drag whenever the handle view it touched
@@ -58,6 +59,7 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
                 return false;
             }
         });
+
     }
 
     @Override
@@ -90,8 +92,8 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
 
         public ItemViewHolder(View itemView) {
             super(itemView);
-            textView = (TextView) itemView.findViewById(R.id.drag_list_item_text);
-            handleView = (ImageView) itemView.findViewById(R.id.drag_list_item_handle);
+            textView = (TextView) itemView.findViewById(R.id.drag_drop_list_item_text);
+            handleView = (ImageView) itemView.findViewById(R.id.drag_drop_list_item_handle);
         }
 
         @Override

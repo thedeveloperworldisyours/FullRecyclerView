@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
-import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.adapter.RecyclerListAdapter;
+import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.adapter.DragAndDropGridAdapter;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.helper.OnStartDragListener;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.helper.SimpleItemTouchHelperCallback;
 
@@ -42,7 +42,7 @@ public class DragGridFragment extends Fragment implements OnStartDragListener {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final RecyclerListAdapter adapter = new RecyclerListAdapter(getActivity(), this);
+        final DragAndDropGridAdapter adapter = new DragAndDropGridAdapter(getActivity(), this);
 
         RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setHasFixedSize(true);

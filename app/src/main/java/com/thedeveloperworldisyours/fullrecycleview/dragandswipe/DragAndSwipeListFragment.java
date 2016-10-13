@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.adapter.RecyclerListAdapter;
+import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.adapter.DragAndSwipeRecyclerListAdapter;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.helper.OnStartDragListener;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.helper.SimpleItemTouchHelperCallback;
 
@@ -41,7 +41,7 @@ public class DragAndSwipeListFragment extends Fragment implements OnStartDragLis
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerListAdapter adapter = new RecyclerListAdapter(getActivity(), this);
+        DragAndSwipeRecyclerListAdapter adapter = new DragAndSwipeRecyclerListAdapter(getActivity(), this);
 
         RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setHasFixedSize(true);

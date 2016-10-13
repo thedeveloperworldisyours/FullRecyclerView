@@ -8,7 +8,7 @@
     android:foreground="?selectableItemBackground">
 
     <ImageView
-        android:id="@+id/drag_list_item_delete"
+        android:id="@+id/drag_swipe_list_item_delete"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -17,7 +17,7 @@
         android:src="@mipmap/arrow_left_right" />
 
     <TextView
-        android:id="@+id/drag_list_item_text"
+        android:id="@+id/drag_swipe_list_item_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_toLeftOf="@+id/drag_list_item_handle"
@@ -25,7 +25,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <ImageView
-        android:id="@+id/drag_list_item_handle"
+        android:id="@+id/drag_swipe_list_item_handle"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="?listPreferredItemHeight"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/drag_drop_list_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/drag_drop_list_item_handle"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/drag_drop_list_item_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        android:scaleType="center"
+        android:src="@mipmap/arrow_crud" />
+
+</RelativeLayout>
