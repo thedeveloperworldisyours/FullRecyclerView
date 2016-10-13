@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FullRecycleView</string>
+
+    <array name="main_items">
+        <item>List - Basic Drag and Swipe</item>
+        <item>Grid - Basic Swipe</item>
+    </array>
+
+    <array name="dummy_items">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+    </array>
+
+    <string name="main_menu_grid">Grid</string>
+    <string name="main_menu_list">Drag list</string>
+    <string name="main_menu_swipe_list">Swipe list</string>
+    <string name="main_menu_horizontal_list">Horizontal list</string>
+
+    <string name="swipe_recycler_view_adapter_delete">Deleted</string>
+    <string name="swipe_recycler_view_adapter_edit">Ed</string>
+    <string name="swipe_recycler_view_adapter_click"> onClick : </string>
+
+    <string name="swipe_item_list_edit">Edit</string>
+    <string name="swipe_item_list_delete">Delete</string>
+
+</resources>
