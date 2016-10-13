@@ -9,8 +9,8 @@
         android:id="@+id/horizontal_list_item_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/activity_horizontal_margin"
         android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/colorAccent" />
@@ -19,10 +19,18 @@
         android:id="@+id/horizontal_list_item_text_view_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/activity_horizontal_margin"
         android:layout_below="@+id/horizontal_list_item_text_view"
         android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/colorAccent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_list_item_text_view_two"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/arrow_left_right_simple" />
+
 </RelativeLayout>

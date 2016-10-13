@@ -7,6 +7,15 @@
     android:focusable="true"
     android:foreground="?selectableItemBackground">
 
+    <ImageView
+        android:id="@+id/drag_list_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical|right"
+        android:scaleType="center"
+        android:src="@mipmap/arrow_left_right" />
+
     <TextView
         android:id="@+id/drag_list_item_text"
         android:layout_width="match_parent"
@@ -22,5 +31,5 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="center_vertical|right"
         android:scaleType="center"
-        android:src="@android:drawable/star_big_on" />
+        android:src="@mipmap/arrow_double_up" />
 </RelativeLayout>

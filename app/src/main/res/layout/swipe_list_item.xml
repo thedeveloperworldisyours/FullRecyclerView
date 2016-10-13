@@ -55,12 +55,19 @@
     </LinearLayout>
 
     <!-- Top View,  Row itemView of RecyclerView -->
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:selectableItemBackground"
-        android:orientation="vertical"
         android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/swipe_item_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow_left_right_simple"/>
 
         <TextView
             android:id="@+id/swipe_item_list_text_view_name"
@@ -78,6 +85,6 @@
             android:layout_margin="5dp"
             android:textColor="@android:color/black"
             android:textSize="12sp" />
-    </LinearLayout>
+    </RelativeLayout>
 
 </com.daimajia.swipe.SwipeLayout>
