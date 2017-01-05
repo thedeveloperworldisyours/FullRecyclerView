@@ -7,13 +7,13 @@ FullRecycleView
 Swipe DragAndDrop  |        Swipe       |        Grid        |    Horizontal 
 ------------------ | ------------------ | ------------------ | ------------------ |
 
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="200px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="150px" />
 |
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="200px" />
-
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif"  width="200px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="150px" />
 |
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif"  width="200px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif"  width="150px" />
+|
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif"  width="150px" />
 
 # About
   You can learn how to rounded corners with this Glide.
