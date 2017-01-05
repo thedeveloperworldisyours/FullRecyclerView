@@ -20,7 +20,7 @@
         android:id="@+id/drag_swipe_list_item_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_toLeftOf="@+id/drag_list_item_handle"
+        android:layout_toLeftOf="@+id/drag_swipe_list_item_handle"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
