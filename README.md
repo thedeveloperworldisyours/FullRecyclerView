@@ -8,11 +8,11 @@ Swipe DragAndDrop  |        Swipe       |        Grid        |    Horizontal
 ------------------ | ------------------ | ------------------ | ------------------
 
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="300px" />
-
+|
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="300px" />
-
+|
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif"  width="300px" />
-
+|
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif"  width="300px" />
 
 # About
