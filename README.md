@@ -2,7 +2,7 @@
 FullRecycleView
 
 
--Swipe DragAndDrop-  |    -------- Swipe --------       |    -------- Grid --------       |   ------ Horizontal  ------  |
+-Swipe DragAndDrop  |    -------- Swipe ---------       |    ----------- Grid -----------       |   --------- Horizontal  ------  |
 |:-:|:-:|:-:|:-:|
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="185px" />
 |
