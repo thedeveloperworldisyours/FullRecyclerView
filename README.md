@@ -7,11 +7,13 @@ FullRecycleView
 First Header  | Second Header
 ------------- | -------------
 
-<img src="https://github.com/CabezasGonzalezJavier/RecyclerViewInDialogFragment/blob/master/recycleViewInDialogFragmentGif.gif"  width="300px" />
-| 
-<img src="https://github.com/CabezasGonzalezJavier/RecyclerViewInDialogFragment/blob/master/recycleViewInDialogFragmentGif.gif"  width="300px" />
+<img src="https://github.com/CabezasGonzalezJavier/RecyclerViewInDialogFragment/edit/master/README.md"  width="300px" />
 
-Content Cell  | Content Cell
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="300px" />
+
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif"  width="300px" />
+
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif"  width="300px" />
 
 # About
   You can learn how to rounded corners with this Glide.
