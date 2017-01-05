@@ -6,7 +6,11 @@ FullRecycleView
 
 First Header  | Second Header
 ------------- | -------------
-Content Cell  | Content Cell
+<p align="center">
+<img src="https://github.com/CabezasGonzalezJavier/RecyclerViewInDialogFragment/blob/master/recycleViewInDialogFragmentGif.gif"  width="300px" />
+</p>  | <p align="center">
+<img src="https://github.com/CabezasGonzalezJavier/RecyclerViewInDialogFragment/blob/master/recycleViewInDialogFragmentGif.gif"  width="300px" />
+</p>
 Content Cell  | Content Cell
 
 # About
