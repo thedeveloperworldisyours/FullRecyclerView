@@ -4,16 +4,16 @@ FullRecycleView
 |:-:|:-:|:-:|:-:|
 | ![Simple slide] | ![Customslide] | ![Permission slide] | ![Finish slide] |
 
-Swipe DragAndDrop  |        Swipe       |        Grid        |    Horizontal 
+Swipe DragAndDrop  |        Swipe       |        Grid        |    Horizontal      |
 ------------------ | ------------------ | ------------------ | ------------------ |
 
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="150px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="170px" />
 |
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="150px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="170px" />
 |
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif"  width="150px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif"  width="170px" />
 |
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif"  width="150px" />
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif"  width="170px" />
 
 # About
   You can learn how to rounded corners with this Glide.
