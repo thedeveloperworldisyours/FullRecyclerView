@@ -5,8 +5,7 @@ FullRecycleView
 | ![Simple slide] | ![Customslide] | ![Permission slide] | ![Finish slide] |
 
 Swipe DragAndDrop  |        Swipe       |        Grid        |    Horizontal      |
------------------- | ------------------ | ------------------ | ------------------ |
-
+|:-:|:-:|:-:|:-:|
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif"  width="185px" />
 |
 <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif"  width="185px" />
