@@ -1,9 +1,9 @@
 # FullRecycleView
 FullRecycleView
 
-[Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link]
---- | --- | ---
-![transition_explode] | ![transition_slide] | ![transition_fade]
+[Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
+--- | --- | --- | ---
+![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
 # About
   You can learn how to rounded corners with this Glide.
