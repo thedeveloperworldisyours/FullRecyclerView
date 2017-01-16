@@ -1,17 +1,23 @@
 # FullRecycleView
-FullRecycleView
+Differents kind of recycle view
 
 [Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
 --- | --- | --- | ---
 ![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
 # About
-  You can learn how to rounded corners with this Glide.
+  You can see differents kind of recycle view :
+ + Drag and drop
+ + Drag and drop in grid
+ + Swipe 
+ + Horizontal list
+ + Expandable list
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
+# Libraries
 
- * **[Glide](https://github.com/bumptech/glide)**
+ * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
  
  
 
