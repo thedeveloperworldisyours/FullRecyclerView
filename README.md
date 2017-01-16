@@ -1,8 +1,10 @@
 # FullRecycleView
 FullRecycleView
-| [Simple slide][SimpleSlide] | [Custom slide][Custom Slide] | [Permission slide][PermissionSlide] | [Finish slide][FinishSlide]
-|:-:|:-:|:-:|:-:|
-| ![Simple slide] | ![Customslide] | ![Permission slide] | ![Finish slide] |
+
+[Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
+--- | --- | --- | ---
+![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
+
 # About
   You can learn how to rounded corners with this Glide.
   
@@ -60,3 +62,12 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+[explode_link]: http://thedeveloperworldisyours.com
+[fade_link]: http://thedeveloperworldisyours.com
+[slide_link]: http://thedeveloperworldisyours.com
+
+[transition_explode]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif
+[transition_slide]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif
+[transition_fade]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif
+[transition_fade2]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif
