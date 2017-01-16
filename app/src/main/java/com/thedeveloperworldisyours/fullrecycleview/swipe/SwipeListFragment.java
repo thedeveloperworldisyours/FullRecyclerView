@@ -1,7 +1,6 @@
 package com.thedeveloperworldisyours.fullrecycleview.swipe;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +8,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import com.daimajia.swipe.util.Attributes;
 import com.thedeveloperworldisyours.fullrecycleview.R;
@@ -35,7 +33,7 @@ public class SwipeListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        View view = inflater.inflate(R.layout.fragment_swipe, container, false);
+        View view = inflater.inflate(R.layout.swipe_fragment, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.fragment_swipe_recycler_view);
 
         SwipeRecyclerViewAdapter adapter = new SwipeRecyclerViewAdapter(getActivity(), mDataSet);

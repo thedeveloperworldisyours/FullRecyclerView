@@ -31,4 +31,6 @@
     <string name="swipe_item_list_edit">Edit</string>
     <string name="swipe_item_list_delete">Delete</string>
 
+    <string name="expandable_fragment_title">Expandable</string>
+
 </resources>

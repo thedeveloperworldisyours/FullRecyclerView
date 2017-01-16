@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
+import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 
@@ -58,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_horizontal_list:
                 mFragment = HorizontalFragment.newInstance();
+                addFragment();
+                return true;
+
+            case R.id.main_menu_expandable:
+                mFragment = ExpandableFragment.newInstance();
                 addFragment();
                 return true;
 

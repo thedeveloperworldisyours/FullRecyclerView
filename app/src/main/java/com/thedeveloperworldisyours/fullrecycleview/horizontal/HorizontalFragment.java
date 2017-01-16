@@ -48,7 +48,7 @@ public class HorizontalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_horizontal, container, false);
+        View view = inflater.inflate(R.layout.horizontal_fragment, container, false);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.fragment_horizontal_recycler_view);
         mRecyclerView.setHasFixedSize(true);
 
