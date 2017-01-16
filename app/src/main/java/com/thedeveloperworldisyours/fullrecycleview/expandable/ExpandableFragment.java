@@ -16,6 +16,7 @@ import static com.thedeveloperworldisyours.fullrecycleview.expandable.GenreDataF
 public class ExpandableFragment extends Fragment {
 
     public ExpandableAdapter adapter;
+
     public ExpandableFragment() {
         // Required empty public constructor
     }

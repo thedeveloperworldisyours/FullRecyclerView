@@ -1,7 +1,5 @@
 package com.thedeveloperworldisyours.fullrecycleview.expandable;
 
-import com.thedeveloperworldisyours.fullrecycleview.R;
-
 import java.util.Arrays;
 import java.util.List;
 
