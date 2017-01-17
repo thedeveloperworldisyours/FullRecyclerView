@@ -5,9 +5,9 @@ Differents kind of recycle view
 --- | --- | --- | ---
 ![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
-[Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
+[expandable][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
 --- | --- | --- | ---
-![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
+![transition_fade3] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
 # About
   You can see differents kind of recycle view :
@@ -81,3 +81,4 @@ License
 [transition_slide]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif
 [transition_fade]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif
 [transition_fade2]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif
+[transition_fade3]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/expandable.gif
