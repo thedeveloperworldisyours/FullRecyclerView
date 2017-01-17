@@ -5,6 +5,10 @@ Differents kind of recycle view
 --- | --- | --- | ---
 ![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
+[Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
+--- | --- | --- | ---
+![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
+
 # About
   You can see differents kind of recycle view :
  + Drag and drop
