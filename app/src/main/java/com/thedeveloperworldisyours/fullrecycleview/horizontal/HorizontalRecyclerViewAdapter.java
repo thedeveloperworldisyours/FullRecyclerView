@@ -32,13 +32,12 @@ public class HorizontalRecyclerViewAdapter extends RecyclerView
             super(itemView);
             label = (TextView) itemView.findViewById(R.id.horizontal_list_item_text_view);
             dateTime = (TextView) itemView.findViewById(R.id.horizontal_list_item_text_view_two);
-            Log.i(LOG_TAG, "Adding Listener");
             itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-            myClickListener.onItemClick(getPosition(), v);
+            myClickListener.onItemClick(getAdapterPosition(), v);
         }
     }
 
@@ -62,8 +61,8 @@ public class HorizontalRecyclerViewAdapter extends RecyclerView
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, int position) {
-//        holder.label.setText(mDataset.get(position).getmTitle());
-//        holder.dateTime.setText(mDataset.get(position).getmSubTitle());
+        holder.label.setText(mDataset.get(position).getmTitle());
+        holder.dateTime.setText(mDataset.get(position).getmSubTitle());
     }
 
     public void addItem(Data dataObj, int index) {

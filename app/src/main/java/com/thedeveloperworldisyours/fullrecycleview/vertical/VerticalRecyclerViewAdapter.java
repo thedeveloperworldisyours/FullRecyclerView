@@ -33,13 +33,12 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
             super(itemView);
             mLabel = (TextView) itemView.findViewById(R.id.vertical_list_item_title);
             mDateTime = (TextView) itemView.findViewById(R.id.vertical_list_item_subtitle);
-            Log.i(LOG_TAG, "Adding Listener");
             itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-            mClickListener.onItemClick(getPosition(), v);
+            mClickListener.onItemClick(getAdapterPosition(), v);
         }
     }
 

@@ -14,12 +14,11 @@ import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
 
 import java.util.ArrayList;
 
-public class VerticalFragment extends Fragment {
+public class VerticalFragment extends Fragment implements VerticalRecyclerViewAdapter.MyClickListener{
 
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-    private static String LOG_TAG = "RecyclerViewActivity";
+    private VerticalRecyclerViewAdapter mAdapter;
+    private static String LOG_TAG = "VerticalFragment-RecyclerViewActivity";
 
     public VerticalFragment() {
         // Required empty public constructor
@@ -50,23 +49,14 @@ public class VerticalFragment extends Fragment {
         RecyclerView.ItemDecoration itemDecoration =
                 new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL);
         mRecyclerView.addItemDecoration(itemDecoration);
+        mAdapter.setOnItemClickListener(this);
 
         return view;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        ((VerticalRecyclerViewAdapter) mAdapter).setOnItemClickListener(new VerticalRecyclerViewAdapter.MyClickListener() {
-            @Override
-            public void onItemClick(int position, View v) {
-                Log.i(LOG_TAG, " Clicked on Item " + position);
-            }
-        });
-    }
 
     private ArrayList<com.thedeveloperworldisyours.fullrecycleview.vertical.Data> getDataSet() {
-        ArrayList results = new ArrayList<com.thedeveloperworldisyours.fullrecycleview.horizontal.Data>();
+        ArrayList results = new ArrayList<>();
         for (int index = 0; index < 20; index++) {
             com.thedeveloperworldisyours.fullrecycleview.vertical.Data obj = new com.thedeveloperworldisyours.fullrecycleview.vertical.Data("Some Primary Text " + index,
                     "Secondary " + index);
@@ -75,4 +65,8 @@ public class VerticalFragment extends Fragment {
         return results;
     }
 
+    @Override
+    public void onItemClick(int position, View v) {
+        Log.i(LOG_TAG, " Clicked on Item " + position);
+    }
 }
