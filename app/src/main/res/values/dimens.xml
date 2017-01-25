@@ -6,4 +6,5 @@
     <dimen name="swipe_item_list">240dp</dimen>
 
     <dimen name="horizontal_list_item_height">150dp</dimen>
+    <dimen name="margin_element_list_item">10dp</dimen>
 </resources>
