@@ -23,11 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
-            DragAndSwipeListFragment fragment = new DragAndSwipeListFragment();
-            getSupportFragmentManager().beginTransaction()
-//                    .add(R.id.content, fragment)
-                    .add(R.id.content, fragment)
-                    .commit();
+            mFragment = new DragAndSwipeListFragment();
+            addFragment();
         }
     }
 
