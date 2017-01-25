@@ -1,7 +1,7 @@
-package com.thedeveloperworldisyours.fullrecycleview.horizontal;
+package com.thedeveloperworldisyours.fullrecycleview.vertical;
 
 /**
- * Created by javierg on 12/10/2016.
+ * Created by javierg on 25/01/2017.
  */
 
 public class Data {

@@ -23,6 +23,7 @@
     <string name="main_menu_list">Drag list</string>
     <string name="main_menu_swipe_list">Swipe list</string>
     <string name="main_menu_horizontal_list">Horizontal list</string>
+    <string name="main_menu_vertical_list">Vertical list</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
@@ -32,5 +33,6 @@
     <string name="swipe_item_list_delete">Delete</string>
 
     <string name="expandable_fragment_title">Expandable</string>
+
 
 </resources>

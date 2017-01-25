@@ -12,6 +12,7 @@ import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeLis
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
+import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
 public class MainActivity extends AppCompatActivity {
     Fragment mFragment;
@@ -59,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_horizontal_list:
                 mFragment = HorizontalFragment.newInstance();
+                addFragment();
+                return true;
+
+            case R.id.main_menu_vertical_list:
+                mFragment = VerticalFragment.newInstance();
                 addFragment();
                 return true;
 

@@ -62,8 +62,8 @@ public class HorizontalRecyclerViewAdapter extends RecyclerView
 
     @Override
     public void onBindViewHolder(DataObjectHolder holder, int position) {
-//        holder.label.setText(mDataset.get(position).getmText1());
-//        holder.dateTime.setText(mDataset.get(position).getmText2());
+//        holder.label.setText(mDataset.get(position).getmTitle());
+//        holder.dateTime.setText(mDataset.get(position).getmSubTitle());
     }
 
     public void addItem(Data dataObj, int index) {

@@ -8,12 +8,15 @@
         android:title="@string/main_menu_grid" />
     <item
         android:id="@+id/main_menu_swipe_list"
-        android:title="@string/main_menu_swipe_list"/>
+        android:title="@string/main_menu_swipe_list" />
     <item
         android:id="@+id/main_menu_horizontal_list"
-        android:title="@string/main_menu_horizontal_list"/>
-
+        android:title="@string/main_menu_horizontal_list" />
+    <item
+        android:id="@+id/main_menu_vertical_list"
+        android:title="@string/main_menu_vertical_list" />
     <item
         android:id="@+id/main_menu_expandable"
-        android:title="@string/expandable_fragment_title"/>
+        android:title="@string/expandable_fragment_title" />
+
 </menu>
