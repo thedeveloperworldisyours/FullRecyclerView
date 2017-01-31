@@ -13,9 +13,12 @@ import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragmen
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
+import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalListener;
 
 public class MainActivity extends AppCompatActivity {
     Fragment mFragment;
+    VerticalListener mListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +34,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
+
         inflater.inflate(R.menu.main_menu, menu);
+        MenuItem addItem = menu.findItem(R.id.main_menu_add_item);
+
+        if (mFragment instanceof VerticalFragment) {
+            addItem.setVisible(true);
+        } else {
+            addItem.setVisible(false);
+        }
 
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        invalidateOptionsMenu();
 
         switch (item.getItemId()) {
             case R.id.main_menu_list:
@@ -57,10 +69,12 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_horizontal_list:
                 mFragment = HorizontalFragment.newInstance();
+                mListener = HorizontalFragment.getActivity();
                 addFragment();
                 return true;
 
             case R.id.main_menu_vertical_list:
+
                 mFragment = VerticalFragment.newInstance();
                 addFragment();
                 return true;
@@ -68,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_menu_expandable:
                 mFragment = ExpandableFragment.newInstance();
                 addFragment();
+                return true;
+
+            case  R.id.main_menu_add_item:
+                mListener.addItem();
                 return true;
 
             default:

@@ -1,10 +1,11 @@
 package com.thedeveloperworldisyours.fullrecycleview.vertical;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,7 @@ import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
 
 import java.util.ArrayList;
 
-public class VerticalFragment extends Fragment implements VerticalRecyclerViewAdapter.MyClickListener{
+public class VerticalFragment extends Fragment implements VerticalRecyclerViewAdapter.MyClickListener, VerticalListener {
 
     private RecyclerView mRecyclerView;
     private VerticalRecyclerViewAdapter mAdapter;
@@ -66,7 +67,30 @@ public class VerticalFragment extends Fragment implements VerticalRecyclerViewAd
     }
 
     @Override
-    public void onItemClick(int position, View v) {
-        Log.i(LOG_TAG, " Clicked on Item " + position);
+    public void onItemClick(final int position, View v) {
+        new AlertDialog.Builder(getActivity())
+                .setTitle(getString(R.string.vertical_fragment_title_dialog))
+                .setMessage(getString(R.string.vertical_fragment_question))
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // continue with delete
+                        mAdapter.deleteItem(position);
+                    }
+                })
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do nothing
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
+
+    @Override
+    public void addItem() {
+        com.thedeveloperworldisyours.fullrecycleview.vertical.Data object = new com.thedeveloperworldisyours.fullrecycleview.vertical.Data("Some Primary Text " + mAdapter.getItemCount(),
+                "Secondary " + mAdapter.getItemCount());
+        mAdapter.addItem(object, mAdapter.getItemCount());
+
     }
 }

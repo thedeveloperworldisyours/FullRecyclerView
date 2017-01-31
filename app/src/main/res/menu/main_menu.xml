@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/main_menu_list"
         android:title="@string/main_menu_list" />
@@ -18,5 +19,11 @@
     <item
         android:id="@+id/main_menu_expandable"
         android:title="@string/expandable_fragment_title" />
+
+    <item
+        android:id="@+id/main_menu_add_item"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/main_menu_vertical_list"
+        app:showAsAction="always" />
 
 </menu>
