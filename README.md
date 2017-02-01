@@ -5,12 +5,13 @@ This is a compilation of differents kind and action in recycle view
 --- | --- | --- | ---
 ![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
-[Add Item][explode_link] | [Delete Item][slide_link] | [Expandable][fade_link] | [Horizontal][fade_link]
+[Add Item][explode_link] | [Delete Item][slide_link] | [Expandable][fade_link] | [Menu][fade_link]
 --- | --- | --- | ---
-![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![transition_fade2]
+![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
 
 # About
-  You can see differents kind of recycle view :
+  This is a compilation of differents kind and action in recycle view :
+  <pre>
  + Drag and drop
  + Drag and drop in grid
  + Swipe 
@@ -18,6 +19,7 @@ This is a compilation of differents kind and action in recycle view
  + Expandable list
  + Add Item
  + Delete Item
+  </pre>
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
@@ -97,3 +99,4 @@ License
 [transition_fade3]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/expandable.gif
 [animation_addItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/addItem.gif
 [animation_deleteItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/deleteItem.gif
+[animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
