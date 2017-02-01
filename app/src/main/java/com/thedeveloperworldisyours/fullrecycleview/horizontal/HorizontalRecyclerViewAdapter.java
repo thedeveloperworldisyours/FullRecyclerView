@@ -1,7 +1,6 @@
 package com.thedeveloperworldisyours.fullrecycleview.horizontal;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +18,7 @@ public class HorizontalRecyclerViewAdapter extends RecyclerView
         .Adapter<HorizontalRecyclerViewAdapter
         .DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<Data> mDataset;
+    private ArrayList<HorizontalData> mDataset;
     private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder
@@ -45,7 +44,7 @@ public class HorizontalRecyclerViewAdapter extends RecyclerView
         this.myClickListener = myClickListener;
     }
 
-    public HorizontalRecyclerViewAdapter(ArrayList<Data> myDataset) {
+    public HorizontalRecyclerViewAdapter(ArrayList<HorizontalData> myDataset) {
         mDataset = myDataset;
     }
 
@@ -65,7 +64,7 @@ public class HorizontalRecyclerViewAdapter extends RecyclerView
         holder.dateTime.setText(mDataset.get(position).getmSubTitle());
     }
 
-    public void addItem(Data dataObj, int index) {
+    public void addItem(HorizontalData dataObj, int index) {
         mDataset.add(dataObj);
         notifyItemInserted(index);
     }

@@ -1,14 +1,14 @@
-package com.thedeveloperworldisyours.fullrecycleview.vertical;
+package com.thedeveloperworldisyours.fullrecycleview.horizontal;
 
 /**
- * Created by javierg on 25/01/2017.
+ * Created by javierg on 12/10/2016.
  */
 
-public class Data {
+public class HorizontalData {
     private String mTitle;
     private String mSubTitle;
 
-    Data(String title, String subTitle){
+    HorizontalData(String title, String subTitle){
         mTitle = title;
         mSubTitle = subTitle;
     }

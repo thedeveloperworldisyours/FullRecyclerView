@@ -34,8 +34,13 @@
 
     <string name="expandable_fragment_title">Expandable</string>
 
-    <string name="vertical_fragment_title_dialog">Delete item</string>
-    <string name="vertical_fragment_question">Are you sure you want to delete this item?</string>
+    <string name="vertical_fragment_title_dialog_delete">Delete item</string>
+    <string name="vertical_fragment_question_delete">Are you sure you want to delete this item?</string>
+
+
+    <string name="vertical_fragment_title_dialog_add">Add item</string>
+    <string name="vertical_fragment_question_add">Are you sure you want to add new item?</string>
+
 
 
 </resources>

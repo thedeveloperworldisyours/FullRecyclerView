@@ -65,10 +65,10 @@ public class HorizontalFragment extends Fragment implements HorizontalRecyclerVi
         return view;
     }
 
-    private ArrayList<Data> getDataSet() {
+    private ArrayList<HorizontalData> getDataSet() {
         ArrayList results = new ArrayList<>();
         for (int index = 0; index < 20; index++) {
-            Data obj = new Data("Some Primary Text " + index,
+            HorizontalData obj = new HorizontalData("Some Primary Text " + index,
                     "Secondary " + index);
             results.add(index, obj);
         }

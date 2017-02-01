@@ -15,7 +15,7 @@ import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
 
 import java.util.ArrayList;
 
-public class VerticalFragment extends Fragment implements VerticalRecyclerViewAdapter.MyClickListener, VerticalListener {
+public class VerticalFragment extends Fragment implements VerticalRecyclerViewAdapter.MyClickListener {
 
     private RecyclerView mRecyclerView;
     private VerticalRecyclerViewAdapter mAdapter;
@@ -56,10 +56,10 @@ public class VerticalFragment extends Fragment implements VerticalRecyclerViewAd
     }
 
 
-    private ArrayList<com.thedeveloperworldisyours.fullrecycleview.vertical.Data> getDataSet() {
+    private ArrayList<VerticalData> getDataSet() {
         ArrayList results = new ArrayList<>();
         for (int index = 0; index < 20; index++) {
-            com.thedeveloperworldisyours.fullrecycleview.vertical.Data obj = new com.thedeveloperworldisyours.fullrecycleview.vertical.Data("Some Primary Text " + index,
+            VerticalData obj = new VerticalData("Some Primary Text " + index,
                     "Secondary " + index);
             results.add(index, obj);
         }
@@ -69,8 +69,8 @@ public class VerticalFragment extends Fragment implements VerticalRecyclerViewAd
     @Override
     public void onItemClick(final int position, View v) {
         new AlertDialog.Builder(getActivity())
-                .setTitle(getString(R.string.vertical_fragment_title_dialog))
-                .setMessage(getString(R.string.vertical_fragment_question))
+                .setTitle(getString(R.string.vertical_fragment_title_dialog_delete))
+                .setMessage(getString(R.string.vertical_fragment_question_delete))
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
@@ -86,11 +86,31 @@ public class VerticalFragment extends Fragment implements VerticalRecyclerViewAd
                 .show();
     }
 
-    @Override
     public void addItem() {
-        com.thedeveloperworldisyours.fullrecycleview.vertical.Data object = new com.thedeveloperworldisyours.fullrecycleview.vertical.Data("Some Primary Text " + mAdapter.getItemCount(),
+        new AlertDialog.Builder(getActivity())
+                .setTitle(getString(R.string.vertical_fragment_title_dialog_add))
+                .setMessage(getString(R.string.vertical_fragment_question_add))
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // continue with delete
+                        actionAdd();
+                    }
+                })
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do nothing
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
+
+    public void actionAdd() {
+        VerticalData object = new VerticalData("Some Primary Text " + mAdapter.getItemCount(),
                 "Secondary " + mAdapter.getItemCount());
         mAdapter.addItem(object, mAdapter.getItemCount());
+
+        mRecyclerView.scrollToPosition(mAdapter.getItemCount() - 1);
 
     }
 }

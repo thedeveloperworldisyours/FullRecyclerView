@@ -1,7 +1,6 @@
 package com.thedeveloperworldisyours.fullrecycleview.vertical;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +19,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         .DataObjectHolder> {
 
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<com.thedeveloperworldisyours.fullrecycleview.vertical.Data> mDataset;
+    private ArrayList<VerticalData> mDataset;
     private static VerticalRecyclerViewAdapter.MyClickListener mClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder
@@ -46,7 +45,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         this.mClickListener = myClickListener;
     }
 
-    public VerticalRecyclerViewAdapter(ArrayList<com.thedeveloperworldisyours.fullrecycleview.vertical.Data> myDataset) {
+    public VerticalRecyclerViewAdapter(ArrayList<VerticalData> myDataset) {
         mDataset = myDataset;
     }
 
@@ -66,7 +65,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         holder.mDateTime.setText(mDataset.get(position).getmSubTitle());
     }
 
-    public void addItem(com.thedeveloperworldisyours.fullrecycleview.vertical.Data dataObj, int index) {
+    public void addItem(VerticalData dataObj, int index) {
         mDataset.add(dataObj);
         notifyItemInserted(index);
     }
@@ -84,4 +83,5 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
     public interface MyClickListener {
         public void onItemClick(int position, View v);
     }
+
 }

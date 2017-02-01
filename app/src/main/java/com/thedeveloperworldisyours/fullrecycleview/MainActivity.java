@@ -13,11 +13,10 @@ import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragmen
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
-import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalListener;
 
 public class MainActivity extends AppCompatActivity {
     Fragment mFragment;
-    VerticalListener mListener;
+    VerticalFragment mVerticalFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_horizontal_list:
                 mFragment = HorizontalFragment.newInstance();
-                mListener = HorizontalFragment.getActivity();
                 addFragment();
                 return true;
 
@@ -77,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
                 mFragment = VerticalFragment.newInstance();
                 addFragment();
+                mVerticalFragment = (VerticalFragment) mFragment;
                 return true;
 
             case R.id.main_menu_expandable:
@@ -85,12 +84,16 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case  R.id.main_menu_add_item:
-                mListener.addItem();
+                mVerticalFragment.addItem();
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void addItemFromActivity() {
+
     }
 
     public void addFragment() {
