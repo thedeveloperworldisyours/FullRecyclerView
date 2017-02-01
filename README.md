@@ -16,15 +16,28 @@ Differents kind of recycle view
  + Swipe 
  + Horizontal list
  + Expandable list
+ + Add Item
+ + Delete Item
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
 # Libraries
 
  * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
+ * **[AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)**
+ * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** 
  
- 
+# Further reading
 
+  As the above only gives a rough overview of recycleView example I'd strongly recommend checking out the following:
+  * **[Drag and drop](https://medium.com/@ipaulpro/drag-and-swipe-with-recyclerview-b9456d2b1aaf#.984ilzuek)** by Paul Burke
+  * **[Drag and drop in grid](https://medium.com/@ipaulpro/drag-and-swipe-with-recyclerview-6a6f0c422efd#.s4r12j9rk)** by Paul Burke
+  * **[Swipe](https://github.com/daimajia/AndroidSwipeLayout)** by 代码家
+  * **[Horizontal list](http://thedeveloperworldisyours.com/android/horizontal-listview-on-android/#sthash.iYuy7X5R.dpbs)** by me
+  * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** by mandybess
+  * **[Add Item](https://github.com/thoughtbot/expandable-recycler-view)** by me
+  * **[Delete Item](https://github.com/thoughtbot/expandable-recycler-view)** by me
+  
 # Requirements
 
     - Android Studio
