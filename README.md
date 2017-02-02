@@ -9,6 +9,10 @@ This is a compilation of differents kind and action in recycle view
 --- | --- | --- | ---
 ![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
 
+[Multiple Choice][explode_link] | [Single Choice][slide_link] | [Expandable][fade_link] | [Menu][fade_link]
+--- | --- | --- | ---
+![animation_multiple] | ![animation_multiple] | ![transition_fade3] | ![animation_menu]
+
 # About
   This is a compilation of differents kind and action in recycle view :
   <pre>
@@ -19,6 +23,8 @@ This is a compilation of differents kind and action in recycle view
  + Expandable list
  + Add Item
  + Delete Item
+ + Multiple Choice
+ + Single Choice
   </pre>
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
@@ -39,6 +45,8 @@ This is a compilation of differents kind and action in recycle view
   * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** by mandybess
   * **[Add Item](https://github.com/thoughtbot/expandable-recycler-view)** by me
   * **[Delete Item](https://github.com/thoughtbot/expandable-recycler-view)** by me
+  * **[Multiple Choice](https://github.com/thoughtbot/expandable-recycler-view)** by me
+  * **[Single Choice](https://github.com/thoughtbot/expandable-recycler-view)** by me
   
 # Requirements
 
@@ -100,3 +108,4 @@ License
 [animation_addItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/addItem.gif
 [animation_deleteItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/deleteItem.gif
 [animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
+[animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
