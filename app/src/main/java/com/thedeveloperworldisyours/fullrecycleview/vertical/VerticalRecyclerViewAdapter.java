@@ -20,7 +20,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
 
     private static String LOG_TAG = "MyRecyclerViewAdapter";
     private ArrayList<VerticalData> mDataset;
-    private static VerticalRecyclerViewAdapter.MyClickListener mClickListener;
+    private static VerticalRecyclerViewAdapter.MyClickListener sClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder
             implements View
@@ -37,12 +37,12 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
 
         @Override
         public void onClick(View v) {
-            mClickListener.onItemClick(getAdapterPosition(), v);
+            sClickListener.onItemClick(getAdapterPosition(), v);
         }
     }
 
     public void setOnItemClickListener(VerticalRecyclerViewAdapter.MyClickListener myClickListener) {
-        this.mClickListener = myClickListener;
+        this.sClickListener = myClickListener;
     }
 
     public VerticalRecyclerViewAdapter(ArrayList<VerticalData> myDataset) {
@@ -81,7 +81,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
     }
 
     public interface MyClickListener {
-        public void onItemClick(int position, View v);
+        void onItemClick(int position, View v);
     }
 
 }

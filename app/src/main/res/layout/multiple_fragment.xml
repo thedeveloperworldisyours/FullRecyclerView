@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment">
+    tools:context="com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/vertical_fragment_recycler_view"
+        android:id="@+id/multiple_fragment_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

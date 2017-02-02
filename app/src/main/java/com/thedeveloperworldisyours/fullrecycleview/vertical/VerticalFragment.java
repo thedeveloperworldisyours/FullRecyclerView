@@ -40,7 +40,7 @@ public class VerticalFragment extends Fragment implements VerticalRecyclerViewAd
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.vertical_fragment, container, false);
 
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.fragment_vertical_recycler_view);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.vertical_fragment_recycler_view);
         mRecyclerView.setHasFixedSize(true);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

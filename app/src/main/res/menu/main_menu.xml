@@ -19,6 +19,9 @@
     <item
         android:id="@+id/main_menu_expandable"
         android:title="@string/expandable_fragment_title" />
+    <item
+        android:id="@+id/main_menu_multiple"
+        android:title="@string/main_menu_multiple" />
 
     <item
         android:id="@+id/main_menu_add_item"

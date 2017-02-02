@@ -11,6 +11,7 @@ import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragmen
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
+import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
@@ -85,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
             case  R.id.main_menu_add_item:
                 mVerticalFragment.addItem();
+                return true;
+
+            case R.id.main_menu_multiple:
+                mFragment = MultipleFragment.newInstance();
+                addFragment();
                 return true;
 
             default:
