@@ -8,7 +8,7 @@
         android:layout_height="90dp"
         android:text="@string/app_name"
         android:typeface="monospace"
-        android:layout_toLeftOf="@+id/multiple_list_item_check_button"
+        android:layout_toLeftOf="@+id/single_list_item_check_button"
         android:gravity="center"
         android:textSize="@dimen/multiple_list_item_size_rock_stars"/>
 
