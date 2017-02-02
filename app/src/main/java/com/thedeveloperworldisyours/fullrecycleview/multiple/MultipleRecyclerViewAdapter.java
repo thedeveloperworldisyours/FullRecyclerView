@@ -19,21 +19,21 @@ public class MultipleRecyclerViewAdapter extends RecyclerView
         .Adapter<MultipleRecyclerViewAdapter
         .DataObjectHolder> {
 
-    List<MultipleData> mList;
+    private List<MultipleData> mList;
     private static MultipleClickListener sClickListener;
 
-    public MultipleRecyclerViewAdapter(List<MultipleData> mList) {
+    MultipleRecyclerViewAdapter(List<MultipleData> mList) {
         this.mList = mList;
     }
 
-    public static class DataObjectHolder extends RecyclerView.ViewHolder
+    static class DataObjectHolder extends RecyclerView.ViewHolder
             implements View
             .OnClickListener {
 
         TextView mTextView;
         RadioButton mRadioButton;
 
-        public DataObjectHolder(View itemView) {
+         DataObjectHolder(View itemView) {
             super(itemView);
             mTextView = (TextView) itemView.findViewById(R.id.multiple_list_item_text);
             mRadioButton = (RadioButton) itemView.findViewById(R.id.multiple_list_item_check_button);
@@ -46,7 +46,7 @@ public class MultipleRecyclerViewAdapter extends RecyclerView
         }
     }
 
-    public void changedData(int position) {
+    void changedData(int position) {
             if (mList.get(position).isBoolean()) {
                 mList.get(position).setBoolean(false);
             } else {
@@ -55,7 +55,7 @@ public class MultipleRecyclerViewAdapter extends RecyclerView
         notifyDataSetChanged();
     }
 
-    public void setOnItemClickListener(MultipleClickListener myClickListener) {
+    void setOnItemClickListener(MultipleClickListener myClickListener) {
         this.sClickListener = myClickListener;
     }
 
@@ -64,7 +64,7 @@ public class MultipleRecyclerViewAdapter extends RecyclerView
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.multiple_list_item, parent, false);
 
-        MultipleRecyclerViewAdapter.DataObjectHolder dataObjectHolder = new MultipleRecyclerViewAdapter.DataObjectHolder(view);
+        DataObjectHolder dataObjectHolder = new DataObjectHolder(view);
         return dataObjectHolder;
     }
 
@@ -79,7 +79,7 @@ public class MultipleRecyclerViewAdapter extends RecyclerView
         return mList.size();
     }
 
-    public interface MultipleClickListener {
+    interface MultipleClickListener {
         void onItemClick(int position, View v);
     }
 

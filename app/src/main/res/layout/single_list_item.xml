@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/single_list_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/app_name"
+        android:typeface="monospace"
+        android:layout_toLeftOf="@+id/multiple_list_item_check_button"
+        android:gravity="center"
+        android:textSize="@dimen/multiple_list_item_size_rock_stars"/>
+
+    <RadioButton
+        android:id="@+id/single_list_item_check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

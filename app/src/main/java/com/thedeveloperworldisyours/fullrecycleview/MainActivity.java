@@ -12,6 +12,7 @@ import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeLis
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
+import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
@@ -93,13 +94,14 @@ public class MainActivity extends AppCompatActivity {
                 addFragment();
                 return true;
 
+            case R.id.main_menu_single:
+                mFragment = SingleFragment.newInstance();
+                addFragment();
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    public void addItemFromActivity() {
-
     }
 
     public void addFragment() {

@@ -18,17 +18,16 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         .Adapter<VerticalRecyclerViewAdapter
         .DataObjectHolder> {
 
-    private static String LOG_TAG = "MyRecyclerViewAdapter";
     private ArrayList<VerticalData> mDataset;
     private static VerticalRecyclerViewAdapter.MyClickListener sClickListener;
 
-    public static class DataObjectHolder extends RecyclerView.ViewHolder
+    static class DataObjectHolder extends RecyclerView.ViewHolder
             implements View
             .OnClickListener {
         TextView mLabel;
         TextView mDateTime;
 
-        public DataObjectHolder(View itemView) {
+        DataObjectHolder(View itemView) {
             super(itemView);
             mLabel = (TextView) itemView.findViewById(R.id.vertical_list_item_title);
             mDateTime = (TextView) itemView.findViewById(R.id.vertical_list_item_subtitle);
@@ -41,11 +40,11 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         }
     }
 
-    public void setOnItemClickListener(VerticalRecyclerViewAdapter.MyClickListener myClickListener) {
+    void setOnItemClickListener(VerticalRecyclerViewAdapter.MyClickListener myClickListener) {
         this.sClickListener = myClickListener;
     }
 
-    public VerticalRecyclerViewAdapter(ArrayList<VerticalData> myDataset) {
+    VerticalRecyclerViewAdapter(ArrayList<VerticalData> myDataset) {
         mDataset = myDataset;
     }
 
@@ -55,7 +54,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.vertical_list_item, parent, false);
 
-        VerticalRecyclerViewAdapter.DataObjectHolder dataObjectHolder = new VerticalRecyclerViewAdapter.DataObjectHolder(view);
+        DataObjectHolder dataObjectHolder = new DataObjectHolder(view);
         return dataObjectHolder;
     }
 
@@ -65,12 +64,12 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         holder.mDateTime.setText(mDataset.get(position).getmSubTitle());
     }
 
-    public void addItem(VerticalData dataObj, int index) {
+    void addItem(VerticalData dataObj, int index) {
         mDataset.add(dataObj);
         notifyItemInserted(index);
     }
 
-    public void deleteItem(int index) {
+    void deleteItem(int index) {
         mDataset.remove(index);
         notifyItemRemoved(index);
     }
@@ -80,7 +79,7 @@ public class VerticalRecyclerViewAdapter extends RecyclerView
         return mDataset.size();
     }
 
-    public interface MyClickListener {
+    interface MyClickListener {
         void onItemClick(int position, View v);
     }
 

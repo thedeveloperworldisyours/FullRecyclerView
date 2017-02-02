@@ -24,8 +24,8 @@
     <string name="main_menu_swipe_list">Swipe list</string>
     <string name="main_menu_horizontal_list">Horizontal list</string>
     <string name="main_menu_vertical_list">Vertical list</string>
-    <string name="main_menu_multiple">Multiple list</string>
-    <string name="main_menu_single_list">Single list</string>
+    <string name="main_menu_multiple">Multiple choice</string>
+    <string name="main_menu_single_list">Single choice</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
