@@ -1,4 +1,4 @@
-package com.thedeveloperworldisyours.fullrecycleview.swipe;
+package com.thedeveloperworldisyours.fullrecycleview.common;
 
 import android.content.Context;
 import android.content.res.TypedArray;

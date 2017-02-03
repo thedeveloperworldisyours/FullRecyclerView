@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
-import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
+import com.thedeveloperworldisyours.fullrecycleview.common.DividerItemDecoration;
 
 import java.util.ArrayList;
 

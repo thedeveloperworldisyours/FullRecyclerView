@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
-import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
+import com.thedeveloperworldisyours.fullrecycleview.common.DividerVerticalItemDecoration;
 
 public class SingleFragment extends Fragment implements SingleRecyclerViewAdapter.SingleClickListener {
 
@@ -43,7 +43,7 @@ public class SingleFragment extends Fragment implements SingleRecyclerViewAdapte
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         RecyclerView.ItemDecoration itemDecoration =
-                new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL);
+                new DividerVerticalItemDecoration(getActivity());
         recyclerView.addItemDecoration(itemDecoration);
         recyclerView.setLayoutManager(layoutManager);
         mAdapter.setOnItemClickListener(this);

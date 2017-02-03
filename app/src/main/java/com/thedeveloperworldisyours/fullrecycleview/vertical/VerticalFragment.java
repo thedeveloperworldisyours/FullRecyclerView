@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
-import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
+import com.thedeveloperworldisyours.fullrecycleview.common.DividerVerticalItemDecoration;
 
 import java.util.ArrayList;
 
@@ -48,7 +48,7 @@ public class VerticalFragment extends Fragment implements VerticalRecyclerViewAd
         mAdapter = new VerticalRecyclerViewAdapter(getDataSet());
         mRecyclerView.setAdapter(mAdapter);
         RecyclerView.ItemDecoration itemDecoration =
-                new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL);
+                new DividerVerticalItemDecoration(getActivity());
         mRecyclerView.addItemDecoration(itemDecoration);
         mAdapter.setOnItemClickListener(this);
 

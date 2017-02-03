@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.daimajia.swipe.util.Attributes;
 import com.thedeveloperworldisyours.fullrecycleview.R;
+import com.thedeveloperworldisyours.fullrecycleview.common.DividerItemDecoration;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.adapter.SwipeRecyclerViewAdapter;
 
 import java.util.ArrayList;

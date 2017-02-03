@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
-import com.thedeveloperworldisyours.fullrecycleview.swipe.DividerItemDecoration;
+import com.thedeveloperworldisyours.fullrecycleview.common.DividerVerticalItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,7 +75,7 @@ public class MultipleFragment extends Fragment implements MultipleRecyclerViewAd
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         RecyclerView.ItemDecoration itemDecoration =
-                new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL);
+                new DividerVerticalItemDecoration(getActivity());
         recyclerView.addItemDecoration(itemDecoration);
         recyclerView.setLayoutManager(layoutManager);
         mAdapter.setOnItemClickListener(this);
