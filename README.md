@@ -1,5 +1,7 @@
-# FullRecycleView
-This is a compilation of differents kind and action in recycle view
+<p align="center">
+ <imghttps://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png/>
+</p>
+This is a compilation of differents kind and action in recyclerView
 
 [Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
 --- | --- | --- | ---
@@ -11,11 +13,11 @@ This is a compilation of differents kind and action in recycle view
 
 [Multiple Choice][multiple] | [Single Choice][single] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
-![animation_multiple] | ![animation_multiple] | ![transition_fade3] | ![animation_menu]
+![animation_multiple] | ![animation_single] | ![transition_fade3] | ![animation_menu]
 
 # About
-  This is a compilation of differents kind and action in recycle view :
-  <pre>
+  This is a compilation of differents kind and action in recyclerView :
+  <pre align="center">
  + Drag and drop
  + Drag and drop in grid
  + Swipe 
@@ -115,3 +117,4 @@ License
 [animation_deleteItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/deleteItem.gif
 [animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
 [animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
+[animation_single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/singleChoice.gif
