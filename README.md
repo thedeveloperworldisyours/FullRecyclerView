@@ -1,6 +1,4 @@
-<p align="center">
- <img https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png/>
-</p>
+![picture alt](https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png/> "FullRecycleView")
 This is a compilation of differents kind and action in recyclerView
 
 [Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
@@ -17,17 +15,17 @@ This is a compilation of differents kind and action in recyclerView
 
 # About
   This is a compilation of differents kind and action in recyclerView :
-  <pre align="center" width="300px">
- + Drag and drop
- + Drag and drop in grid
- + Swipe 
- + Horizontal list
- + Expandable list
- + Add Item
- + Delete Item
- + Multiple Choice
- + Single Choice
-  </pre>
+  
+ - [ ] Drag and drop
+ - [ ] Drag and drop in grid
+ - [ ] Swipe 
+ - [ ] Horizontal list
+ - [ ] Expandable list
+ - [ ] Add Item
+ - [ ] Delete Item
+ - [ ] Multiple Choice
+ - [ ] Single Choice
+
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
