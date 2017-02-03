@@ -39,7 +39,6 @@
 
  * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
  * **[AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)**
- * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** 
  
 # Further reading
 
