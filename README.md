@@ -1,15 +1,15 @@
 # FullRecycleView
 This is a compilation of differents kind and action in recycle view
 
-[Swipe DragAndDrop][explode_link] | [Swipe][slide_link] | [Grid][fade_link] | [Horizontal][fade_link]
+[Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
 --- | --- | --- | ---
 ![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
 
-[Add Item][explode_link] | [Delete Item][slide_link] | [Expandable][fade_link] | [Menu][fade_link]
+[Add Item][add] | [Delete Item][delete] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
 ![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
 
-[Multiple Choice][explode_link] | [Single Choice][slide_link] | [Expandable][fade_link] | [Menu][fade_link]
+[Multiple Choice][multiple] | [Single Choice][single] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
 ![animation_multiple] | ![animation_multiple] | ![transition_fade3] | ![animation_menu]
 
@@ -43,10 +43,10 @@ This is a compilation of differents kind and action in recycle view
   * **[Swipe](https://github.com/daimajia/AndroidSwipeLayout)** by 代码家
   * **[Horizontal list](http://thedeveloperworldisyours.com/android/horizontal-listview-on-android/#sthash.iYuy7X5R.dpbs)** by me
   * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** by mandybess
-  * **[Add Item](https://github.com/thoughtbot/expandable-recycler-view)** by me
-  * **[Delete Item](https://github.com/thoughtbot/expandable-recycler-view)** by me
-  * **[Multiple Choice](https://github.com/thoughtbot/expandable-recycler-view)** by me
-  * **[Single Choice](https://github.com/thoughtbot/expandable-recycler-view)** by me
+  * **[Add Item](http://thedeveloperworldisyours.com)** by me
+  * **[Delete Item](http://thedeveloperworldisyours.com)** by me
+  * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
+  * **[Single Choice](http://thedeveloperworldisyours.com)** by me
   
 # Requirements
 
@@ -96,9 +96,15 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
-[explode_link]: http://thedeveloperworldisyours.com
-[fade_link]: http://thedeveloperworldisyours.com
-[slide_link]: http://thedeveloperworldisyours.com
+[dragandswipe]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe
+[swipe]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe
+[horizontal]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal
+[add]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
+[delete]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
+[expandable]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable
+[menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
+[multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple
+[single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single
 
 [transition_explode]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif
 [transition_slide]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif
