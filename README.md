@@ -1,10 +1,11 @@
 
 <p align="center">
-<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" width="300px" />
+ <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" />
+ <h4>This is a compilation of differents kind and action in recyclerView</h4>
 </p>
 
 
-This is a compilation of differents kind and action in recyclerView
+
 
 [Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
 --- | --- | --- | ---
