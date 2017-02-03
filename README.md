@@ -1,5 +1,5 @@
 <p align="center">
- <imghttps://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png/>
+ <img https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png/>
 </p>
 This is a compilation of differents kind and action in recyclerView
 
@@ -17,7 +17,7 @@ This is a compilation of differents kind and action in recyclerView
 
 # About
   This is a compilation of differents kind and action in recyclerView :
-  <pre align="center">
+  <pre align="center" width="300px">
  + Drag and drop
  + Drag and drop in grid
  + Swipe 
