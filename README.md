@@ -1,4 +1,7 @@
-![picture alt](https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png/> "FullRecycleView")
+
+<p align="center">
+<img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" width="300px" />
+</p>
 
 
 This is a compilation of differents kind and action in recyclerView
