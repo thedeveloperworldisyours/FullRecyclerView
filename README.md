@@ -51,7 +51,7 @@
   * **[Add Item](http://thedeveloperworldisyours.com)** by me
   * **[Delete Item](http://thedeveloperworldisyours.com)** by me
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
-  * **[Single Choice](http://thedeveloperworldisyours.com)** by me
+  * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
   
 # Requirements
 
