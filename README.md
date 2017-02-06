@@ -1,5 +1,11 @@
-# FullRecycleView
-This is a compilation of differents kind and action in recycle view
+
+<p align="center">
+ <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" />
+ <h4>This is a compilation of differents kind and action in recyclerView</h4>
+</p>
+
+
+
 
 [Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
 --- | --- | --- | ---
@@ -11,21 +17,21 @@ This is a compilation of differents kind and action in recycle view
 
 [Multiple Choice][multiple] | [Single Choice][single] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
-![animation_multiple] | ![animation_multiple] | ![transition_fade3] | ![animation_menu]
+![animation_multiple] | ![animation_single] | ![transition_fade3] | ![animation_menu]
 
 # About
-  This is a compilation of differents kind and action in recycle view :
-  <pre>
- + Drag and drop
- + Drag and drop in grid
- + Swipe 
- + Horizontal list
- + Expandable list
- + Add Item
- + Delete Item
- + Multiple Choice
- + Single Choice
-  </pre>
+  This is a compilation of differents kind and action in recyclerView :
+  
+ - [ ] Drag and drop
+ - [ ] Drag and drop in grid
+ - [ ] Swipe 
+ - [ ] Horizontal list
+ - [ ] Expandable list
+ - [ ] Add Item
+ - [ ] Delete Item
+ - [ ] Multiple Choice
+ - [ ] Single Choice
+
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
@@ -33,7 +39,6 @@ This is a compilation of differents kind and action in recycle view
 
  * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
  * **[AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)**
- * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** 
  
 # Further reading
 
@@ -46,7 +51,7 @@ This is a compilation of differents kind and action in recycle view
   * **[Add Item](http://thedeveloperworldisyours.com)** by me
   * **[Delete Item](http://thedeveloperworldisyours.com)** by me
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
-  * **[Single Choice](http://thedeveloperworldisyours.com)** by me
+  * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
   
 # Requirements
 
@@ -115,3 +120,4 @@ License
 [animation_deleteItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/deleteItem.gif
 [animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
 [animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
+[animation_single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/singleChoice.gif
