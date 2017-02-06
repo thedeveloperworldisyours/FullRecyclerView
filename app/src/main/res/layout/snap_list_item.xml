@@ -5,7 +5,7 @@
     android:background="@android:color/white">
 
     <ImageView
-        android:id="@+id/snap_list_item_rectangule"
+        android:id="@+id/snap_list_item_rectangle"
         android:layout_width="@dimen/snap_list_view_width"
         android:layout_height="@dimen/snap_list_view_width"
         android:layout_margin="@dimen/snap_list_view_margin"
@@ -14,8 +14,9 @@
     <ImageView
         android:id="@+id/snap_list_item_image_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/snap_list_view_height"
         android:layout_margin="@dimen/snap_list_view_margin"
+        android:scaleType="centerCrop"
         android:src="@drawable/thedeveloperworldisyours" />
 
     <TextView
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/snap_list_item_rectangle"
         android:layout_margin="@dimen/snap_list_view_margin"
         android:text="@string/the_developer_world_is_yours" />
 

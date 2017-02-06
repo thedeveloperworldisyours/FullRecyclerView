@@ -7,6 +7,13 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/snap_fragment_horizontal_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/snap_fragment_vertical_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snap_fragment_horizontal_recycler_view"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

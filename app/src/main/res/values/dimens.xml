@@ -10,5 +10,7 @@
     <dimen name="multiple_list_item_size_rock_stars">29sp</dimen>
 
     <dimen name="snap_list_view_width">190dp</dimen>
+
+    <dimen name="snap_list_view_height">100dp</dimen>
     <dimen name="snap_list_view_margin">10dp</dimen>
 </resources>
