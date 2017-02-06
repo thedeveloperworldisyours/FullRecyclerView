@@ -13,6 +13,8 @@ import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragmen
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
+import com.thedeveloperworldisyours.fullrecycleview.snap.SnapData;
+import com.thedeveloperworldisyours.fullrecycleview.snap.SnapFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
@@ -96,6 +98,11 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_single:
                 mFragment = SingleFragment.newInstance();
+                addFragment();
+                return true;
+
+            case R.id.main_menu_snap:
+                mFragment = SnapFragment.newInstance();
                 addFragment();
                 return true;
 

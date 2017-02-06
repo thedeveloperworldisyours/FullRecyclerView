@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/snap_list_view_width"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/snap_list_item_rectangule"
+        android:layout_width="@dimen/snap_list_view_width"
+        android:layout_height="@dimen/snap_list_view_width"
+        android:layout_margin="@dimen/snap_list_view_margin"
+        android:background="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/snap_list_item_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/snap_list_view_margin"
+        android:src="@drawable/thedeveloperworldisyours" />
+
+    <TextView
+        android:id="@+id/snap_list_item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/snap_list_view_margin"
+        android:text="@string/the_developer_world_is_yours" />
+
+</RelativeLayout>

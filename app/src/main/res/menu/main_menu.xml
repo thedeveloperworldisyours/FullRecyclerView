@@ -25,6 +25,10 @@
     <item
         android:id="@+id/main_menu_single"
         android:title="@string/main_menu_single_list" />
+
+    <item
+        android:id="@+id/main_menu_snap"
+        android:title="@string/main_menu_snap_list" />
     <item
         android:id="@+id/main_menu_add_item"
         android:icon="@android:drawable/ic_menu_add"

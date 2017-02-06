@@ -8,4 +8,7 @@
     <dimen name="horizontal_list_item_height">150dp</dimen>
     <dimen name="margin_element_list_item">10dp</dimen>
     <dimen name="multiple_list_item_size_rock_stars">29sp</dimen>
+
+    <dimen name="snap_list_view_width">190dp</dimen>
+    <dimen name="snap_list_view_margin">10dp</dimen>
 </resources>

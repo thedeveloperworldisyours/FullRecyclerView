@@ -63,11 +63,7 @@ public class SingleRecyclerViewAdapter extends RecyclerView.Adapter<SingleRecycl
     public void onBindViewHolder(DataObjectHolder holder, int position) {
         holder.mTextView.setText(mData[position]);
 
-        if (sSelected == position) {
-            holder.mRadioButton.setChecked(true);
-        } else {
-            holder.mRadioButton.setChecked(false);
-        }
+        holder.mRadioButton.setChecked(sSelected == position);
 
     }
 
