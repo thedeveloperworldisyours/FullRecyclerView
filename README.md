@@ -15,9 +15,9 @@
 --- | --- | --- | ---
 ![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
 
-[Multiple Choice][multiple] | [Single Choice][single] | [Expandable][expandable] | [Menu][menu]
+[Multiple Choice][multiple] | [Single Choice][single] | [Snap][snap] | [Menu][menu]
 --- | --- | --- | ---
-![animation_multiple] | ![animation_single] | ![transition_fade3] | ![animation_menu]
+![animation_multiple] | ![animation_single] | ![animation_snap] | ![animation_menu]
 
 # About
   This is a compilation of differents kind and action in recyclerView :
@@ -31,6 +31,7 @@
  - [ ] Delete Item
  - [ ] Multiple Choice
  - [ ] Single Choice
+ - [ ] Snap
 
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
@@ -39,6 +40,7 @@
 
  * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
  * **[AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)**
+ * **[RecyclerViewSnap](https://github.com/rubensousa/RecyclerViewSnap)**
  
 # Further reading
 
@@ -52,6 +54,7 @@
   * **[Delete Item](http://thedeveloperworldisyours.com)** by me
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
   * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
+  * **[Snap](https://github.com/rubensousa/RecyclerViewSnap/blob/master/README.md)** by Rúben Sousa
   
 # Requirements
 
@@ -110,6 +113,8 @@ License
 [menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
 [multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple
 [single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single
+[snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
+
 
 [transition_explode]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif
 [transition_slide]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif
@@ -121,3 +126,4 @@ License
 [animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
 [animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
 [animation_single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/singleChoice.gif
+[animation_snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/snap.gif
