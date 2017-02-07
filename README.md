@@ -15,9 +15,9 @@
 --- | --- | --- | ---
 ![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
 
-[Multiple Choice][multiple] | [Single Choice][single] | [Snap][snap] | [Menu][menu]
+[Multiple Choice][multiple] | [Single Choice][single] | [Snap][snap] | [Sanp][snap]
 --- | --- | --- | ---
-![animation_multiple] | ![animation_single] | ![animation_snap] | ![animation_menu]
+![animation_multiple] | ![animation_single] | ![animation_snap] | ![animation_snap_vertical]
 
 # About
   This is a compilation of differents kind and action in recyclerView :
@@ -126,4 +126,5 @@ License
 [animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
 [animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
 [animation_single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/singleChoice.gif
-[animation_snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/snap.gif
+[animation_snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/horizontalSnap.gif
+[animation_snap_vertical]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/verticalSnap.gif
