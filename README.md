@@ -1,7 +1,7 @@
 
 <p align="center">
  <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" />
- <h4>This is a compilation of differents kind and action in recyclerView</h4>
+ <h4>This is a compilation of differents kinds and actiones in recyclerView</h4>
 </p>
 
 
@@ -20,7 +20,7 @@
 ![animation_multiple] | ![animation_single] | ![animation_snap] | ![animation_snap_vertical]
 
 # About
-  This is a compilation of differents kind and action in recyclerView :
+  This is a compilation of differents kinds and actiones in recyclerView :
   
  - [ ] Drag and drop
  - [ ] Drag and drop in grid
