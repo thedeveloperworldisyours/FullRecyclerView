@@ -13,7 +13,7 @@
 
 [Add Item][add] | [Delete Item][delete] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
-![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
+![animation_addItem] | ![animation_deleteItem] | ![transition_expandable] | ![animation_menu]
 
 [Multiple Choice][multiple] | [Single Choice][single] | [Snap][snap] | [Sanp][snap]
 --- | --- | --- | ---
@@ -95,7 +95,7 @@ Developed By
 License
 -------
 
-    Copyright 2016 Javier González Cabezas
+    Copyright 2017 Javier González Cabezas
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -125,7 +125,7 @@ License
 [transition_swipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif
 [animation_grid]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif
 [animation_horizontal]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif
-[transition_fade3]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
+[transition_expandable]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
 [animation_addItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif
 [animation_deleteItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif
 [animation_menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
