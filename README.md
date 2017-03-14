@@ -7,17 +7,40 @@
 
 
 
-[Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
+[Swipe DragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | 
+[Swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe) | 
+[Grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | 
+[Horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal)
 --- | --- | --- | ---
-![transition_dragAndDrop] | ![transition_swipe] | ![animation_grid] | ![animation_horizontal]
-
+![transition_dragAndDrop]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif) 
+| ![transition_swipe]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif)
+| ![animation_grid]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)
+| ![animation_horizontal]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)
 [Add Item][add] | [Delete Item][delete] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
-![animation_addItem] | ![animation_deleteItem] | ![transition_expandable] | ![animation_menu]
+![animation_addItem]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif) | 
+![animation_deleteItem] 
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif)
+| ![transition_expandable]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif)
+| ![animation_menu]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif)
 
 [Multiple Choice][multiple] | [Single Choice][single] | [Snap][snap] | [Sanp][snap]
 --- | --- | --- | ---
-![animation_multiple] | ![animation_single] | ![animation_snap] | ![animation_snap_vertical]
+![animation_multiple]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif)
+| ![animation_single]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif)
+| ![animation_snap]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif)
+| ![animation_snap_vertical]
+(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif)
 
 # About
   This is a compilation of differents kinds and actiones in recyclerView :
@@ -125,10 +148,12 @@ License
 [transition_swipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif
 [animation_grid]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif
 [animation_horizontal]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif
+
 [transition_expandable]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
 [animation_addItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif
 [animation_deleteItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif
 [animation_menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
+
 [animation_multiple]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif
 [animation_single]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif
 [animation_snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif
