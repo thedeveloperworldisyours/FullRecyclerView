@@ -7,21 +7,19 @@
 
 
 
-[Swipe DragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | 
+| [Swipe DragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | 
 [Swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe) | 
 [Grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | 
 [Horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal)
---- | --- | --- | ---
-![transition_dragAndDrop]
-(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif) 
-| ![transition_swipe]
-(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif)
-| ![animation_grid]
-(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)
-| ![animation_horizontal]
-(https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)
-[Add Item][add] | [Delete Item][delete] | [Expandable][expandable] | [Menu][menu]
---- | --- | --- | ---
+| --- | --- | --- | --- | 
+| ![transition_dragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif) 
+| ![transition_swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif)
+| ![animation_grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)
+| ![animation_horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)
+[Add Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical) | [Delete Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical)
+| [Expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable) 
+| [Menu](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif) | 
+| --- | --- | --- | --- | 
 ![animation_addItem]
 (https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif) | 
 ![animation_deleteItem] 
