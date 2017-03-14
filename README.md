@@ -121,15 +121,15 @@ License
 [snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
 
 
-[transition_explode]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif
-[transition_slide]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif
-[transition_fade]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif
-[transition_fade2]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif
-[transition_fade3]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/expandable.gif
-[animation_addItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/addItem.gif
-[animation_deleteItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/deleteItem.gif
-[animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
-[animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
-[animation_single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/singleChoice.gif
-[animation_snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/horizontalSnap.gif
-[animation_snap_vertical]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/verticalSnap.gif
+[transition_explode]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif
+[transition_slide]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif
+[transition_fade]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif
+[transition_fade2]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif
+[transition_fade3]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
+[animation_addItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif
+[animation_deleteItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif
+[animation_menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
+[animation_multiple]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif
+[animation_single]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif
+[animation_snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif
+[animation_snap_vertical]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif
