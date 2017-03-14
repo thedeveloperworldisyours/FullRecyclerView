@@ -109,16 +109,16 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
-[dragandswipe]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe
-[swipe]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe
-[horizontal]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal
-[add]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
-[delete]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
-[expandable]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable
-[menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
-[multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple
-[single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single
-[snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
+[dragandswipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe
+[swipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe
+[horizontal]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal
+[add]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
+[delete]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
+[expandable]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable
+[menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
+[multiple]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple
+[single]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single
+[snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
 
 
 [transition_explode]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif
