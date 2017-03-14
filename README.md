@@ -9,7 +9,7 @@
 
 [Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
 --- | --- | --- | ---
-![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
+![transition_dragAndDrop] | ![transition_swipe] | ![animation_grid] | ![animation_horizontal]
 
 [Add Item][add] | [Delete Item][delete] | [Expandable][expandable] | [Menu][menu]
 --- | --- | --- | ---
@@ -121,10 +121,10 @@ License
 [snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
 
 
-[transition_explode]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif
-[transition_slide]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif
-[transition_fade]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif
-[transition_fade2]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif
+[transition_dragAndDrop]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif
+[transition_swipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif
+[animation_grid]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif
+[animation_horizontal]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif
 [transition_fade3]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
 [animation_addItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif
 [animation_deleteItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif
