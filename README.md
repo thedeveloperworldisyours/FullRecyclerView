@@ -1,26 +1,22 @@
 
 <p align="center">
  <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" />
- <h4>This is a compilation of differents kind and action in recyclerView</h4>
+ <h4>This is a compilation of differents kinds and actiones in recyclerView</h4>
 </p>
 
 
 
 
-[Swipe DragAndDrop][dragandswipe] | [Swipe][swipe] | [Grid][dragandswipe] | [Horizontal][horizontal]
---- | --- | --- | ---
-![transition_explode] | ![transition_slide] | ![transition_fade] | ![transition_fade2]
-
-[Add Item][add] | [Delete Item][delete] | [Expandable][expandable] | [Menu][menu]
---- | --- | --- | ---
-![animation_addItem] | ![animation_deleteItem] | ![transition_fade3] | ![animation_menu]
-
-[Multiple Choice][multiple] | [Single Choice][single] | [Snap][snap] | [Menu][menu]
---- | --- | --- | ---
-![animation_multiple] | ![animation_single] | ![animation_snap] | ![animation_menu]
+| [Swipe DragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | [Swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe) | [Grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif) | [Horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal)|
+| :---:        |     :---:      |     :---:       |     :---:      |
+| ![transition_dragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif) | ![transition_swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif)| ![animation_grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)| ![animation_horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)| 
+|[Add Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical) | [Delete Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical)| [Expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable) | [Menu](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif)|
+|![animation_addItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif) | ![animation_deleteItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif)| ![transition_expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif)| ![animation_menu](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif)|
+|[Multiple Choice](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple) | [Single Choice](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single) | [Snap](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap) | [Sanp](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap)|
+|![animation_multiple](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif)| ![animation_single](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif)| ![animation_snap](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif)| ![animation_snap_vertical](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif)|
 
 # About
-  This is a compilation of differents kind and action in recyclerView :
+  This is a compilation of differents kinds and actiones in recyclerView :
   
  - [ ] Drag and drop
  - [ ] Drag and drop in grid
@@ -35,6 +31,11 @@
 
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
+  
+<a href="http://thedeveloperworldisyours.com/">
+  <img alt="The developer world is yours" src="https://github.com/CabezasGonzalezJavier/AddTextViewButton/blob/master/TheDeveloperWordIsYours.png" />
+</a>
+  
 ---------
 # Libraries
 
@@ -90,7 +91,7 @@ Developed By
 License
 -------
 
-    Copyright 2016 Javier González Cabezas
+    Copyright 2017 Javier González Cabezas
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -104,26 +105,29 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
-[dragandswipe]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe
-[swipe]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe
-[horizontal]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal
-[add]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
-[delete]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
-[expandable]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable
-[menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
-[multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple
-[single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single
-[snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
+[dragandswipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe
+[swipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe
+[horizontal]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal
+[add]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
+[delete]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical
+[expandable]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable
+[menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
+[multiple]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple
+[single]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single
+[snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap
 
 
-[transition_explode]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/DragAndDrop.gif
-[transition_slide]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Swipe.gif
-[transition_fade]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Grid.gif
-[transition_fade2]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/Horizontal.gif
-[transition_fade3]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/expandable.gif
-[animation_addItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/addItem.gif
-[animation_deleteItem]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/deleteItem.gif
-[animation_menu]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/menu.gif
-[animation_multiple]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/multipleChoice.gif
-[animation_single]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/singleChoice.gif
-[animation_snap]: https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/snap.gif
+[transition_dragAndDrop]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif
+[transition_swipe]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif
+[animation_grid]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif
+[animation_horizontal]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif
+
+[transition_expandable]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
+[animation_addItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif
+[animation_deleteItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif
+[animation_menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
+
+[animation_multiple]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif
+[animation_single]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif
+[animation_snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif
+[animation_snap_vertical]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif
