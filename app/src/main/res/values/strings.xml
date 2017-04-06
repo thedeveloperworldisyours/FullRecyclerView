@@ -27,6 +27,7 @@
     <string name="main_menu_multiple">Multiple choice</string>
     <string name="main_menu_single_list">Single choice</string>
     <string name="main_menu_snap_list">Snap</string>
+    <string name="main_menu_animation">Animation</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>

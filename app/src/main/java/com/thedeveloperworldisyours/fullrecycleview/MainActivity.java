@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.thedeveloperworldisyours.fullrecycleview.animation.AnimationFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
@@ -103,6 +104,11 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_snap:
                 mFragment = SnapFragment.newInstance();
+                addFragment();
+                return true;
+
+            case R.id.main_menu_animation:
+                mFragment = AnimationFragment.newInstance();
                 addFragment();
                 return true;
 

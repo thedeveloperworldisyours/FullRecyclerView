@@ -4,24 +4,31 @@
     <item
         android:id="@+id/main_menu_list"
         android:title="@string/main_menu_list" />
+
     <item
         android:id="@+id/main_menu_grid"
         android:title="@string/main_menu_grid" />
+
     <item
         android:id="@+id/main_menu_swipe_list"
         android:title="@string/main_menu_swipe_list" />
+
     <item
         android:id="@+id/main_menu_horizontal_list"
         android:title="@string/main_menu_horizontal_list" />
+
     <item
         android:id="@+id/main_menu_vertical_list"
         android:title="@string/main_menu_vertical_list" />
+
     <item
         android:id="@+id/main_menu_expandable"
         android:title="@string/expandable_fragment_title" />
+
     <item
         android:id="@+id/main_menu_multiple"
         android:title="@string/main_menu_multiple" />
+
     <item
         android:id="@+id/main_menu_single"
         android:title="@string/main_menu_single_list" />
@@ -29,6 +36,11 @@
     <item
         android:id="@+id/main_menu_snap"
         android:title="@string/main_menu_snap_list" />
+
+    <item
+        android:id="@+id/main_menu_animation"
+        android:title="@string/main_menu_animation" />
+
     <item
         android:id="@+id/main_menu_add_item"
         android:icon="@android:drawable/ic_menu_add"
