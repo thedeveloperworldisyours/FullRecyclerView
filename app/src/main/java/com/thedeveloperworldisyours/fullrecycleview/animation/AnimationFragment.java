@@ -45,7 +45,7 @@ public class AnimationFragment extends Fragment implements AnimationRecyclerView
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        mAdapter = new AnimationRecyclerViewAdapter(getDataSet());
+        mAdapter = new AnimationRecyclerViewAdapter(getActivity(), getDataSet());
         mRecyclerView.setAdapter(mAdapter);
         RecyclerView.ItemDecoration itemDecoration =
                 new DividerVerticalItemDecoration(getActivity());
