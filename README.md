@@ -52,7 +52,7 @@
   * **[Horizontal list](http://thedeveloperworldisyours.com/android/horizontal-listview-on-android/#sthash.iYuy7X5R.dpbs)** by me
   * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** by mandybess
   * **[Add Item](http://thedeveloperworldisyours.com/android/add-item-recyclerview/#sthash.760pgLjD.dpbs)** by me
-  * **[Delete Item](http://thedeveloperworldisyours.com)** by me
+  * **[Delete Item](http://thedeveloperworldisyours.com/android/delete-item-recyclerview/#sthash.cIze1tg4.dpbs)** by me
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
   * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
   * **[Snap](https://github.com/rubensousa/RecyclerViewSnap/blob/master/README.md)** by Rúben Sousa
