@@ -18,6 +18,7 @@
         <item>Nine</item>
         <item>Ten</item>
     </array>
+    <string name="retry">Retry</string>
 
     <string name="main_menu_grid">Grid</string>
     <string name="main_menu_list">Drag list</string>
@@ -28,6 +29,7 @@
     <string name="main_menu_single_list">Single choice</string>
     <string name="main_menu_snap_list">Snap</string>
     <string name="main_menu_animation">Animation</string>
+    <string name="main_menu_sections">Sections</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
