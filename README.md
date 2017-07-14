@@ -10,8 +10,8 @@
 | [Swipe DragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/dragandswipe) | [Swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/swipe) | [Grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Grid.gif) | [Horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/horizontal)|
 | :---:        |     :---:      |     :---:       |     :---:      |
 | ![transition_dragAndDrop](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/DragAndDrop.gif) | ![transition_swipe](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Swipe.gif)| ![animation_grid](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)| ![animation_horizontal](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/Horizontal.gif)| 
-|[Add Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical) | [Delete Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical)| [Expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable) | [Menu](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif)|
-|![animation_addItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif) | ![animation_deleteItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif)| ![transition_expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif)| ![animation_menu](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif)|
+|[Add Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical) | [Delete Item](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/vertical)| [Expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/expandable) | [Animation](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/animation)|
+|![animation_addItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif) | ![animation_deleteItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif)| ![transition_expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif)| ![animation](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/animation.gif)|
 |[Multiple Choice](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple) | [Single Choice](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single) | [Snap](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap) | [Sanp](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap)|
 |![animation_multiple](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif)| ![animation_single](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif)| ![animation_snap](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif)| ![animation_snap_vertical](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif)|
 
@@ -51,8 +51,8 @@
   * **[Swipe](https://github.com/daimajia/AndroidSwipeLayout)** by 代码家
   * **[Horizontal list](http://thedeveloperworldisyours.com/android/horizontal-listview-on-android/#sthash.iYuy7X5R.dpbs)** by me
   * **[Expandable list](https://github.com/thoughtbot/expandable-recycler-view)** by mandybess
-  * **[Add Item](http://thedeveloperworldisyours.com)** by me
-  * **[Delete Item](http://thedeveloperworldisyours.com)** by me
+  * **[Add Item](http://thedeveloperworldisyours.com/android/add-item-recyclerview/#sthash.760pgLjD.dpbs)** by me
+  * **[Delete Item](http://thedeveloperworldisyours.com/android/delete-item-recyclerview/#sthash.cIze1tg4.dpbs)** by me
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
   * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
   * **[Snap](https://github.com/rubensousa/RecyclerViewSnap/blob/master/README.md)** by Rúben Sousa
@@ -125,7 +125,7 @@ License
 [transition_expandable]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif
 [animation_addItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif
 [animation_deleteItem]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif
-[animation_menu]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/menu.gif
+[animation]: https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/animation
 
 [animation_multiple]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif
 [animation_single]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif
