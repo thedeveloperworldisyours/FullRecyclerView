@@ -7,14 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.thedeveloperworldisyours.fullrecycleview.R;
 import com.thedeveloperworldisyours.fullrecycleview.sections.model.ElementList;
-import com.thedeveloperworldisyours.fullrecycleview.sections.model.EventDomain;
 
 import java.util.List;
 
@@ -51,17 +47,7 @@ public class SectionAdapter extends RecyclerView
         @BindView(R.id.section_item_name)
         TextView mName;
 
-        @BindView(R.id.section_item_venue)
-        TextView mVenue;
 
-        @BindView(R.id.section_item_dates)
-        TextView mDate;
-
-        @BindView(R.id.section_item_image)
-        ImageView mImage;
-
-        @BindView(R.id.section_item_favorite)
-        CheckBox mFavorite;
 
 
         DataObjectHolder(View itemView) {
@@ -108,21 +94,7 @@ public class SectionAdapter extends RecyclerView
         switch (holder.getItemViewType()) {
             case NORMAL:
                 DataObjectHolder dataObjectHolder = (DataObjectHolder) holder;
-                EventDomain event = (EventDomain) mList.get(position);
                 dataObjectHolder.mName.setText(mList.get(position).getName());
-                dataObjectHolder.mVenue.setText(event.getVenue());
-                dataObjectHolder.mDate.setText(event.getLocalDate());
-                dataObjectHolder.mFavorite.setChecked(event.isFavourite());
-                dataObjectHolder.mFavorite.setOnClickListener((View view) -> {
-                    if (event.isFavourite()) {
-                        sClickListener.onItemClick(position, false);
-                    } else {
-                        sClickListener.onItemClick(position, true);
-                    }
-                });
-                Glide.with(mContext)
-                        .load(event.getImage())
-                        .into(dataObjectHolder.mImage);
                 setAnimation(dataObjectHolder.itemView, position);
                 break;
 

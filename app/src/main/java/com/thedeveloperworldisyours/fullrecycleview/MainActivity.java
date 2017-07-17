@@ -13,6 +13,7 @@ import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeLis
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
+import com.thedeveloperworldisyours.fullrecycleview.sections.SectionFragment;
 import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.snap.SnapData;
 import com.thedeveloperworldisyours.fullrecycleview.snap.SnapFragment;
@@ -58,63 +59,55 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.main_menu_list:
                 mFragment = DragAndSwipeListFragment.newInstance();
-                addFragment();
-                return true;
-
+                break;
             case R.id.main_menu_grid:
                 mFragment = DragGridFragment.newInstance();
-                addFragment();
-                return true;
+                break;
 
             case R.id.main_menu_swipe_list:
                 mFragment = SwipeListFragment.newInstance();
-                addFragment();
-                return true;
+                break;
 
             case R.id.main_menu_horizontal_list:
                 mFragment = HorizontalFragment.newInstance();
-                addFragment();
-                return true;
+                break;
 
             case R.id.main_menu_vertical_list:
 
                 mFragment = VerticalFragment.newInstance();
-                addFragment();
-                mVerticalFragment = (VerticalFragment) mFragment;
-                return true;
+                break;
 
             case R.id.main_menu_expandable:
                 mFragment = ExpandableFragment.newInstance();
-                addFragment();
-                return true;
+                break;
 
-            case  R.id.main_menu_add_item:
+            case R.id.main_menu_add_item:
                 mVerticalFragment.addItem();
-                return true;
+                break;
 
             case R.id.main_menu_multiple:
                 mFragment = MultipleFragment.newInstance();
-                addFragment();
-                return true;
-
+                break;
             case R.id.main_menu_single:
                 mFragment = SingleFragment.newInstance();
-                addFragment();
-                return true;
+                break;
 
             case R.id.main_menu_snap:
                 mFragment = SnapFragment.newInstance();
-                addFragment();
-                return true;
+                break;
 
             case R.id.main_menu_animation:
                 mFragment = AnimationFragment.newInstance();
-                addFragment();
-                return true;
-
+                break;
+            case R.id.main_menu_section:
+                mFragment = SectionFragment.newInstance();
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+        addFragment();
+        return true;
     }
 
     public void addFragment() {

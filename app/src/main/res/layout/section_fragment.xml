@@ -5,28 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.thedeveloperworldisyours.fullrecycleview.sections.SectionFragment">
 
-    <ImageView
-        android:id="@+id/theme_fragment_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"/>
-
-    <Button
-        android:id="@+id/event_fragment_retry_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:text="@string/retry"
-        android:textAllCaps="false"
-        android:visibility="gone" />
-
-    <ProgressBar
-        android:id="@+id/event_fragment_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/event_fragment_recycler_view"
         android:layout_width="match_parent"

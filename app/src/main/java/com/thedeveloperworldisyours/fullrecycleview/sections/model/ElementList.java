@@ -9,6 +9,11 @@ public class ElementList {
     private String mName;
     boolean section;
 
+    public ElementList(String mName, boolean section) {
+        this.mName = mName;
+        this.section = section;
+    }
+
     public boolean isSection() {
         return section;
     }

@@ -42,6 +42,10 @@
         android:title="@string/main_menu_animation" />
 
     <item
+        android:id="@+id/main_menu_section"
+        android:title="@string/main_menu_sections" />
+
+    <item
         android:id="@+id/main_menu_add_item"
         android:icon="@android:drawable/ic_menu_add"
         android:title="@string/main_menu_vertical_list"
