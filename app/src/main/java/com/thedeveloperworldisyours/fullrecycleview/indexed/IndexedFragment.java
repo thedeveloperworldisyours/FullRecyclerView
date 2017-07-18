@@ -1,4 +1,4 @@
-package com.thedeveloperworldisyours.fullrecycleview.sections;
+package com.thedeveloperworldisyours.fullrecycleview.indexed;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -20,22 +20,21 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
-public class SectionFragment extends Fragment {
+public class IndexedFragment extends Fragment {
 
     HashMap<String, Integer> mMapIndex;
     String[] mSections;
     List<String> fruits;
 
     private RecyclerView mRecyclerView;
-    private SectionAdapter mAdapter;
+    private ContactAdapter mAdapter;
 
-    public SectionFragment() {
+    public IndexedFragment() {
         // Required empty public constructor
     }
 
-    public static SectionFragment newInstance() {
-        SectionFragment fragment = new SectionFragment();
-        return fragment;
+    public static IndexedFragment newInstance() {
+        return new IndexedFragment();
     }
 
     @Override
@@ -47,14 +46,16 @@ public class SectionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.section_fragment, container, false);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.event_fragment_recycler_view);
+        View view = inflater.inflate(R.layout.fragment_indexed, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.fragment_contact_recycler_view);
+        mRecyclerView.setScrollbarFadingEnabled(true);
         mRecyclerView.setHasFixedSize(true);
-
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        mAdapter = new SectionAdapter(getActivity(), getDataSet());
+        mAdapter = new ContactAdapter(getActivity(), getDataSet(), mSections, mMapIndex);
         mRecyclerView.setAdapter(mAdapter);
+
+
         return view;
     }
 

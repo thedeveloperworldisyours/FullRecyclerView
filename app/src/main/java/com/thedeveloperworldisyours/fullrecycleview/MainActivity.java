@@ -12,10 +12,10 @@ import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragmen
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
+import com.thedeveloperworldisyours.fullrecycleview.indexed.IndexedFragment;
 import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.sections.SectionFragment;
 import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
-import com.thedeveloperworldisyours.fullrecycleview.snap.SnapData;
 import com.thedeveloperworldisyours.fullrecycleview.snap.SnapFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_menu_list:
                 mFragment = DragAndSwipeListFragment.newInstance();
                 break;
+
             case R.id.main_menu_grid:
                 mFragment = DragGridFragment.newInstance();
                 break;
@@ -73,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.main_menu_vertical_list:
-
                 mFragment = VerticalFragment.newInstance();
                 break;
 
@@ -99,9 +99,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_menu_animation:
                 mFragment = AnimationFragment.newInstance();
                 break;
+
             case R.id.main_menu_section:
                 mFragment = SectionFragment.newInstance();
                 break;
+
+            case R.id.main_menu_indexed:
+                mFragment = IndexedFragment.newInstance();
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

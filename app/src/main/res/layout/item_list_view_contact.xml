@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/item_list_view_contact_photo_image_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_list_view_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/item_list_view_contact_photo_image_view"
+        android:gravity="center_vertical"
+        android:text="friend name"
+        android:layout_alignBottom="@+id/item_list_view_contact_photo_image_view"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+

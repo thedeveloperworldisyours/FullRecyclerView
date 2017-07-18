@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_list_view_header_contact_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_list_view_header_contact_title"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

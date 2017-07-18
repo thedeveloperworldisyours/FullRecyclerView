@@ -30,6 +30,7 @@
     <string name="main_menu_snap_list">Snap</string>
     <string name="main_menu_animation">Animation</string>
     <string name="main_menu_sections">Sections</string>
+    <string name="main_menu_indexed">Indexed</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
@@ -48,5 +49,70 @@
     <string name="vertical_fragment_question_add">Are you sure you want to add new item?</string>
 
     <string name="the_developer_world_is_yours">The developer world is yours</string>
+
+    <string-array name="fruits_array">
+        <item>Apples</item>
+        <item>Apricots</item>
+        <item>Avocado</item>
+        <item>Annona</item>
+        <item>Banana</item>
+        <item>Bilberry</item>
+        <item>Blackberry</item>
+        <item>Custard Apple</item>
+        <item>Clementine</item>
+        <item>Cantalope</item>
+        <item>Coconut</item>
+        <item>Currant</item>
+        <item>Cherry</item>
+        <item>Cherimoya</item>
+        <item>Date</item>
+        <item>Damson</item>
+        <item>Durian</item>
+        <item>Elderberry</item>
+        <item>Fig</item>
+        <item>Feijoa</item>
+        <item>Grapefruit</item>
+        <item>Grape</item>
+        <item>Gooseberry</item>
+        <item>Guava</item>
+        <item>Honeydew melon</item>
+        <item>Huckleberry</item>
+        <item>Jackfruit</item>
+        <item>Juniper Berry</item>
+        <item>Jambul</item>
+        <item>Jujube</item>
+        <item>Kiwi</item>
+        <item>Kumquat</item>
+        <item>Lemons</item>
+        <item>Limes</item>
+        <item>Lychee</item>
+        <item>Mango</item>
+        <item>Mandarin</item>
+        <item>Mangostine</item>
+        <item>Nectaraine</item>
+        <item>Orange</item>
+        <item>Olive</item>
+        <item>Prunes</item>
+        <item>Pears</item>
+        <item>Plum</item>
+        <item>Pineapple</item>
+        <item>Peach</item>
+        <item>Papaya</item>
+        <item>Passionfruit</item>
+        <item>Pomegranate</item>
+        <item>Pomelo</item>
+        <item>Raspberries</item>
+        <item>Rock melon</item>
+        <item>Rambutan</item>
+        <item>Strawberries</item>
+        <item>Sweety</item>
+        <item>Salmonberry</item>
+        <item>Satsuma</item>
+        <item>Tangerines</item>
+        <item>Tomato</item>
+        <item>Ugli</item>
+        <item>Watermelon</item>
+        <item>Woodapple</item>
+    </string-array>
 
 </resources>
