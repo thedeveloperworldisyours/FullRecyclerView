@@ -7,20 +7,20 @@
     tools:ignore="UnusedAttribute">
 
     <ImageView
-        android:id="@+id/item_list_view_contact_photo_image_view"
+        android:id="@+id/indexed_item_list_view_image_view"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:scaleType="centerCrop" />
 
     <TextView
-        android:id="@+id/item_list_view_contact_name"
+        android:id="@+id/indexed_item_list_view_name"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/item_list_view_contact_photo_image_view"
+        android:layout_toRightOf="@+id/indexed_item_list_view_image_view"
         android:gravity="center_vertical"
         android:text="friend name"
-        android:layout_alignBottom="@+id/item_list_view_contact_photo_image_view"
+        android:layout_alignBottom="@+id/indexed_item_list_view_image_view"
         android:textSize="20sp"/>
 
 </RelativeLayout>

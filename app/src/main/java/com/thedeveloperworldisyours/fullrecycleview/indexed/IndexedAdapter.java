@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
  * Created by javierg on 18/07/2017.
  */
 
-public class ContactAdapter extends RecyclerView
+public class IndexedAdapter extends RecyclerView
         .Adapter<RecyclerView.ViewHolder> implements SectionIndexer {
 
     HashMap<String, Integer> mMapIndex;
@@ -32,7 +32,7 @@ public class ContactAdapter extends RecyclerView
     public static final int SECTION = 2;
     private Context mContext;
     private List<ElementList> mList;
-    private static ContactAdapter.MyClickListener sClickListener;
+    private static IndexedAdapter.MyClickListener sClickListener;
     // Allows to remember the last item shown on screen
     private int mLastPosition = -1;
 
@@ -52,7 +52,7 @@ public class ContactAdapter extends RecyclerView
     }
 
     static class SectionHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.item_list_view_header_contact_title)
+        @BindView(R.id.indexed_item_list_view_header_title)
         TextView mTextViewSection;
 
         SectionHolder(View itemView) {
@@ -64,7 +64,7 @@ public class ContactAdapter extends RecyclerView
     static class DataObjectHolder extends RecyclerView.ViewHolder
             implements View
             .OnClickListener {
-        @BindView(R.id.item_list_view_contact_name)
+        @BindView(R.id.indexed_item_list_view_name)
         TextView mName;
 
         DataObjectHolder(View itemView) {
@@ -79,11 +79,11 @@ public class ContactAdapter extends RecyclerView
         }
     }
 
-    public void setOnItemClickListener(ContactAdapter.MyClickListener myClickListener) {
+    public void setOnItemClickListener(IndexedAdapter.MyClickListener myClickListener) {
         this.sClickListener = myClickListener;
     }
 
-    public ContactAdapter(Context context, List<ElementList> list, String[] sections, HashMap<String, Integer> mapIndex) {
+    public IndexedAdapter(Context context, List<ElementList> list, String[] sections, HashMap<String, Integer> mapIndex) {
         mContext = context;
         mList = list;
         mSections = sections;
@@ -93,10 +93,10 @@ public class ContactAdapter extends RecyclerView
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_list_view_contact, parent, false);
+                .inflate(R.layout.indexed_item_list_view, parent, false);
 
         View viewSection = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_list_view_header_contact, parent, false);
+                .inflate(R.layout.indexed_item_list_view_header, parent, false);
 
         switch (viewType) {
             case ITEM:

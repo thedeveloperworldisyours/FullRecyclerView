@@ -4,10 +4,8 @@
     android:layout_height="match_parent"
     tools:context="com.thedeveloperworldisyours.fullrecycleview.indexed.IndexedFragment">
 
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/fragment_contact_recycler_view"
+    <in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView
+        android:id="@+id/indexed_fragment_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </FrameLayout>

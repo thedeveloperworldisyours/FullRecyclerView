@@ -27,7 +27,7 @@ public class IndexedFragment extends Fragment {
     List<String> fruits;
 
     private RecyclerView mRecyclerView;
-    private ContactAdapter mAdapter;
+    private IndexedAdapter mAdapter;
 
     public IndexedFragment() {
         // Required empty public constructor
@@ -46,13 +46,13 @@ public class IndexedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_indexed, container, false);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.fragment_contact_recycler_view);
+        View view = inflater.inflate(R.layout.indexed_fragment, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.indexed_fragment_recycler_view);
         mRecyclerView.setScrollbarFadingEnabled(true);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        mAdapter = new ContactAdapter(getActivity(), getDataSet(), mSections, mMapIndex);
+        mAdapter = new IndexedAdapter(getActivity(), getDataSet(), mSections, mMapIndex);
         mRecyclerView.setAdapter(mAdapter);
 
 
