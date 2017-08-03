@@ -31,6 +31,7 @@
     <string name="main_menu_animation">Animation</string>
     <string name="main_menu_sections">Sections</string>
     <string name="main_menu_indexed">Indexed</string>
+    <string name="main_menu_add_favorites">Add Favorites</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
@@ -47,6 +48,9 @@
 
     <string name="vertical_fragment_title_dialog_add">Add item</string>
     <string name="vertical_fragment_question_add">Are you sure you want to add new item?</string>
+
+    <string name="add_favorites_title">Favorites</string>
+    <string name="add_favorites_no_favorites">No Favorites</string>
 
     <string name="the_developer_world_is_yours">The developer world is yours</string>
 

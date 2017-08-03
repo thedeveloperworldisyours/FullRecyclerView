@@ -68,7 +68,7 @@
 
     - Install Android Studio:
 
-    https://developer.android.com/sdk/installing/index.html
+    https://developer.android.com/sdk/installing/mIndex.html
 
     - Install gradle:
 

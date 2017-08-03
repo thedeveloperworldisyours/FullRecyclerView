@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.thedeveloperworldisyours.fullrecycleview.addfavorites.AddFavoritesFragment;
 import com.thedeveloperworldisyours.fullrecycleview.animation.AnimationFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
@@ -106,6 +107,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_indexed:
                 mFragment = IndexedFragment.newInstance();
+                break;
+
+            case R.id.main_menu_add_favorites:
+                mFragment = AddFavoritesFragment.newInstance();
                 break;
 
             default:

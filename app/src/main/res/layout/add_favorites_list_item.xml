@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/spacing_small"
+    android:layout_marginRight="@dimen/spacing_small"
+    android:layout_marginTop="@dimen/spacing_small"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/add_favorites_item_image"
+        android:layout_width="@dimen/spacing_extra_huge"
+        android:layout_height="@dimen/spacing_extra_huge"
+        android:background="@android:drawable/gallery_thumb" />
+
+    <TextView
+        android:id="@+id/add_favorites_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_xsmall"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_toLeftOf="@+id/add_favorites_item_favorite"
+        android:layout_toRightOf="@+id/add_favorites_item_image"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_favorites_item_venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_favorites_item_name"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_toLeftOf="@+id/add_favorites_item_favorite"
+        android:layout_toRightOf="@+id/add_favorites_item_image" />
+
+    <TextView
+        android:id="@+id/add_favorites_item_dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_favorites_item_venue"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_toLeftOf="@+id/add_favorites_item_favorite"
+        android:layout_toRightOf="@+id/add_favorites_item_image" />
+
+    <CheckBox
+        android:id="@+id/add_favorites_item_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_xsmall"
+        android:button="@drawable/selector" />
+
+</RelativeLayout>

@@ -3,4 +3,6 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#cfcfcf</color>
     <color name="colorAccent">#b72d28</color>
+
+    <color name="colorAddFavoritesSection">#FFCC80</color>
 </resources>
