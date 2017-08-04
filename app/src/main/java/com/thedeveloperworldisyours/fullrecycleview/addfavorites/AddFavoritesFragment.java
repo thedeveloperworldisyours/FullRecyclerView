@@ -119,19 +119,18 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
                     result.add(i, list.get(i));
                 } else {
                     if (list.get(i).isSection()) {
-                        result.add(i, list.get(i + 1));
                         afterNoFavoritesHeader = true;
+                        currentFruit = (Fruit) list.get(i+ 1);
+                        if  (currentFruit.getIndex()  > fruit.getIndex()) {
+                            result.add(i, fruit);
+                        } else {
+                            result.add(i, list.get(i +1));
+                        }
                     } else {
                         if (afterNoFavoritesHeader) {
                             currentFruit = (Fruit) list.get(i);
-                            if (currentFruit.getIndex() < fruit.getIndex()) {
-
-                                if (currentFruit.getIndex() + 1 == fruit.getIndex()) {
+                            if  (currentFruit.getIndex() + 1 == fruit.getIndex()) {
                                     result.add(i, fruit);
-                                } else {
-                                    result.add(i, list.get(i + 1));
-                                }
-
                             } else {
                                 result.add(i, list.get(i));
                             }
