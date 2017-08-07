@@ -63,9 +63,9 @@
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
   * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
   * **[Snap](https://github.com/rubensousa/RecyclerViewSnap/blob/master/README.md)** by Rúben Sousa
-  * **[Selected](http://thedeveloperworldisyours.com/android) ** by me
-  * **[Add Favorites](http://thedeveloperworldisyours.com/android) ** by me
-  * **[Indexed](https://github.com/myinnos/AlphabetIndex-Fast-Scroll-RecyclerView) ** by Prabhakar Thota
+  * **[Selected](http://thedeveloperworldisyours.com/android)** by me
+  * **[Add Favorites](http://thedeveloperworldisyours.com/android)** by me
+  * **[Indexed](https://github.com/myinnos/AlphabetIndex-Fast-Scroll-RecyclerView)** by Prabhakar Thota
   
 # Requirements
 
