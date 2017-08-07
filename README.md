@@ -48,7 +48,7 @@
  * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
  * **[AndroidSwipeLayout](https://github.com/daimajia/AndroidSwipeLayout)**
  * **[RecyclerViewSnap](https://github.com/rubensousa/RecyclerViewSnap)**
- * **[AlphabetIndex-Fast-Scroll-RecyclerView](https://github.com/myinnos/AlphabetIndex-Fast-Scroll-RecyclerView)
+ * **[AlphabetIndex-Fast-Scroll-RecyclerView](https://github.com/myinnos/AlphabetIndex-Fast-Scroll-RecyclerView)**
  
 # Further reading
 
