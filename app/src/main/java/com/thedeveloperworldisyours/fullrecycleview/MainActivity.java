@@ -16,6 +16,7 @@ import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragmen
 import com.thedeveloperworldisyours.fullrecycleview.indexed.IndexedFragment;
 import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.sections.SectionFragment;
+import com.thedeveloperworldisyours.fullrecycleview.sectionwithline.SectionWithLineFragment;
 import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.snap.SnapFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
@@ -111,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_add_favorites:
                 mFragment = AddFavoritesFragment.newInstance();
+                break;
+
+            case R.id.main_menu_section_with_line:
+                mFragment = SectionWithLineFragment.newInstance();
                 break;
 
             default:

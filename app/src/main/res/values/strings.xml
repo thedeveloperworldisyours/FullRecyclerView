@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FullRecycleView</string>
+    <string name="app_name">FullRecyclerView</string>
 
     <array name="main_items">
         <item>List - Basic Drag and Swipe</item>
@@ -32,6 +32,7 @@
     <string name="main_menu_sections">Sections</string>
     <string name="main_menu_indexed">Indexed</string>
     <string name="main_menu_add_favorites">Add Favorites</string>
+    <string name="main_menu_section_with_line">Section with line</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
@@ -118,5 +119,8 @@
         <item>Watermelon</item>
         <item>Woodapple</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
