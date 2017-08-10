@@ -14,8 +14,8 @@
 |![animation_addItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addItem.gif) | ![animation_deleteItem](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/deleteItem.gif)| ![transition_expandable](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/expandable.gif)| ![animation](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/animation.gif)|
 |[Multiple Choice](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/multiple) | [Single Choice](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/single) | [Snap](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap) | [Sanp](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/snap)|
 |![animation_multiple](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/multipleChoice.gif)| ![animation_single](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif)| ![animation_snap](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif)| ![animation_snap_vertical](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif)|
-| [Section](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/sections) | [Add Favorites](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/addfavorites) | [Indexed](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/indexed) | [Indexed](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/indexed)|
-|![animation_section](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/section.gif)| ![animation_addfavorites](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addFavorites.gif)| ![animation_indexed](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/indexed.gif)| ![animation_indexed](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/indexed.gif)|
+| [Section](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/sections) | [Add Favorites](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/addfavorites) | [Section with Lines](https://github.com/thedeveloperworldisyours/FullRecyclerView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/sectionwithline) | [Indexed](https://github.com/thedeveloperworldisyours/FullRecycleView/tree/master/app/src/main/java/com/thedeveloperworldisyours/fullrecycleview/indexed)|
+|![animation_section](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/section.gif)| ![animation_addfavorites](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/addFavorites.gif)| ![animation_sectionwihtlines](https://github.com/thedeveloperworldisyours/FullRecyclerView/blob/master/sectionWithLines.gif)| ![animation_indexed](https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/indexed.gif)|
 
 
 # About
@@ -32,6 +32,7 @@
  - [ ] Single Choice
  - [ ] Snap
  - [ ] Section
+ - [ ] Section With Lines
  - [ ] Add Favoites
  - [ ] Indexed
 
@@ -63,7 +64,8 @@
   * **[Multiple Choice](http://thedeveloperworldisyours.com/android/multiple-choice-recyclerview/#sthash.aD5rVYfB.dpbs)** by me
   * **[Single Choice](http://thedeveloperworldisyours.com/android/single-choice-recyclerview/#sthash.NWIoNAeD.dpbs)** by me
   * **[Snap](https://github.com/rubensousa/RecyclerViewSnap/blob/master/README.md)** by Rúben Sousa
-  * **[Selected](http://thedeveloperworldisyours.com/android)** by me
+  * **[Selection](http://thedeveloperworldisyours.com/android)** by me
+  * **[Selection with lines](http://thedeveloperworldisyours.com/android)** by me
   * **[Add Favorites](http://thedeveloperworldisyours.com/android)** by me
   * **[Indexed](https://github.com/myinnos/AlphabetIndex-Fast-Scroll-RecyclerView)** by Prabhakar Thota
   
@@ -141,3 +143,5 @@ License
 [animation_single]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/singleChoice.gif
 [animation_snap]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/horizontalSnap.gif
 [animation_snap_vertical]: https://github.com/thedeveloperworldisyours/FullRecycleView/blob/master/verticalSnap.gif
+
+[animation_sectionwihtlines](https://github.com/thedeveloperworldisyours/FullRecyclerView/blob/master/sectionWithLines.gif)
