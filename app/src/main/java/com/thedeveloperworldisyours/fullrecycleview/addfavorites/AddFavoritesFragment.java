@@ -144,6 +144,7 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
     public List<ElementList> deleteFavorite(List<ElementList> list, int position) {
 
         List<ElementList> result = new ArrayList<>();
+        ArrayList<Fruit> newRestList= new ArrayList<>();
         Fruit fruit = (Fruit) list.get(position);
         fruit.setFavourite(false);
         mFavoritesAndHeadersList.remove(fruit);
@@ -159,16 +160,22 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
             for (int i = 0; i < mRestList.size(); i++) {
                 if (fruit.getIndex() > mRestList.get(i).getIndex()) {
                     result.add(mRestList.get(i));
+                    newRestList.add(mRestList.get(i));
                 } else {
                     if (!addedFruit) {
 
                         result.add(fruit);
+                        newRestList.add(fruit);
                         addedFruit = true;
                     }
                     result.add(mRestList.get(i));
+                    newRestList.add(mRestList.get(i));
                 }
 
             }
+            //Update restList
+            mRestList.clear();
+            mRestList = newRestList;
 
         } else {
             //there is not favorite remove both header
