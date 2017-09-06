@@ -20,6 +20,8 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
     private ArrayList<ElementList> mList;
     private RecyclerView mRecyclerView;
     private AddFavoritesAdapter mAdapter;
+    private ArrayList<ElementList> mFavoritesAndHeadersList;
+    private ArrayList<Fruit> mRestList;
 
     public AddFavoritesFragment() {
         // Required empty public constructor
@@ -48,6 +50,10 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
         mAdapter = new AddFavoritesAdapter(getActivity(), mList);
         mAdapter.setOnItemClickListener(this);
         mRecyclerView.setAdapter(mAdapter);
+
+        mRestList = new ArrayList<>();
+        mFavoritesAndHeadersList = new ArrayList<>();
+
         return view;
     }
 
@@ -78,9 +84,29 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
         Fruit fruit = (Fruit) list.get(position);
         fruit.setFavourite(true);
 
+
         result.add(0, new ElementList(getString(R.string.add_favorites_title), true));
         result.add(1, list.get(position));
+
+
         if (list.get(0).isSection()) {
+
+            mFavoritesAndHeadersList.clear();
+            //filled Favorite List
+            mFavoritesAndHeadersList.add(0, new ElementList(getString(R.string.add_favorites_title), true));
+            for (int i = 1; i < list.size(); i++) {
+                if (i == 1) {
+                    mFavoritesAndHeadersList.add(i, fruit);
+                    mFavoritesAndHeadersList.add(i + 1, list.get(i));
+                } else {
+                    mFavoritesAndHeadersList.add(i + 1, list.get(i));
+                    if (list.get(i).isSection()) {
+                        break;
+                    }
+                }
+            }
+
+            //filled result List
             for (int i = 1; i < list.size(); i++) {
                 if (position > i) {
                     result.add(i + 1, list.get(i));
@@ -88,18 +114,29 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
                     result.add(i, list.get(i));
                 }
             }
-        } else {
 
+            //removed item from rest list
+            mRestList.remove(fruit);
+
+        } else {
             //first favorite
+            mFavoritesAndHeadersList.add(0, new ElementList(getString(R.string.add_favorites_title), true));
+            mFavoritesAndHeadersList.add(1, list.get(position));
+            mFavoritesAndHeadersList.add(2, new ElementList(getString(R.string.add_favorites_no_favorites), true));
+
             result.add(2, new ElementList(getString(R.string.add_favorites_no_favorites), true));
+
             for (int i = 0; i < list.size(); i++) {
                 if (position > i) {
                     result.add(i + 3, list.get(i));
+                    mRestList.add(i, (Fruit) list.get(i));
                 } else if (position < i) {
                     result.add(i + 2, list.get(i));
+                    mRestList.add(i - 1, (Fruit) list.get(i));
                 }
             }
         }
+
 
         return result;
     }
@@ -108,41 +145,36 @@ public class AddFavoritesFragment extends Fragment implements AddFavoritesAdapte
 
         List<ElementList> result = new ArrayList<>();
         Fruit fruit = (Fruit) list.get(position);
-        Fruit currentFruit;
         fruit.setFavourite(false);
-        boolean afterNoFavoritesHeader = false;
+        mFavoritesAndHeadersList.remove(fruit);
+        boolean addedFruit = false;
 
         if (countFavorite(list) > 0) {
-            for (int i = 0; i < list.size(); i++) {
 
-                if (position > i) {
-                    result.add(i, list.get(i));
-                } else {
-                    if (list.get(i).isSection()) {
-                        afterNoFavoritesHeader = true;
-                        currentFruit = (Fruit) list.get(i+ 1);
-                        if  (currentFruit.getIndex()  > fruit.getIndex()) {
-                            result.add(i, fruit);
-                        } else {
-                            result.add(i, list.get(i +1));
-                        }
-                    } else {
-                        if (afterNoFavoritesHeader) {
-                            currentFruit = (Fruit) list.get(i);
-                            if  (currentFruit.getIndex() + 1 == fruit.getIndex()) {
-                                    result.add(i, fruit);
-                            } else {
-                                result.add(i, list.get(i));
-                            }
-                        } else {
-                            result.add(i, list.get(i + 1));
-                        }
-                    }
-                }
+            //Added favorites and headers
+            for (int i = 0; i < mFavoritesAndHeadersList.size(); i++) {
+                result.add(mFavoritesAndHeadersList.get(i));
             }
+            //Added rest of elements
+            for (int i = 0; i < mRestList.size(); i++) {
+                if (fruit.getIndex() > mRestList.get(i).getIndex()) {
+                    result.add(mRestList.get(i));
+                } else {
+                    if (!addedFruit) {
+
+                        result.add(fruit);
+                        addedFruit = true;
+                    }
+                    result.add(mRestList.get(i));
+                }
+
+            }
+
         } else {
             //there is not favorite remove both header
             result = getDataSet();
+            mFavoritesAndHeadersList.clear();
+            mRestList.clear();
         }
         return result;
     }
