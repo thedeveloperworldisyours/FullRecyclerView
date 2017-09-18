@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:background="#001F3F"
     android:orientation="horizontal"
+    android:paddingLeft="15dp"
     android:textColor="@android:color/white"
     android:textSize="28sp"
     android:textStyle="bold" />

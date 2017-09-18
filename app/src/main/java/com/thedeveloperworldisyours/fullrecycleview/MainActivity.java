@@ -9,7 +9,6 @@ import android.view.MenuItem;
 
 import com.thedeveloperworldisyours.fullrecycleview.addfavorites.AddFavoritesFragment;
 import com.thedeveloperworldisyours.fullrecycleview.animation.AnimationFragment;
-import com.thedeveloperworldisyours.fullrecycleview.contacts.ContactsFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;

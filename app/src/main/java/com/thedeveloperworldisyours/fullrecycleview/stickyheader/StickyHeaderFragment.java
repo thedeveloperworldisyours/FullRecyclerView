@@ -44,8 +44,8 @@ public class StickyHeaderFragment extends Fragment {
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
 
         // Set adapter populated with example dummy data
-        final AnimalsHeadersAdapter adapter = new AnimalsHeadersAdapter();
-        adapter.add("Animals below!");
+        final AnimalsHeadersAdapter adapter = new AnimalsHeadersAdapter(getActivity());
+        adapter.add("");
         adapter.addAll(getDummyDataSet());
         recyclerView.setAdapter(adapter);
 
@@ -80,45 +80,4 @@ public class StickyHeaderFragment extends Fragment {
         return getResources().getStringArray(R.array.animals);
     }
 
-    private class AnimalsHeadersAdapter extends AnimalsAdapter<RecyclerView.ViewHolder>
-            implements StickyRecyclerHeadersAdapter<RecyclerView.ViewHolder> {
-        @Override
-        public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.view_item, parent, false);
-            return new RecyclerView.ViewHolder(view) {
-            };
-        }
-
-        @Override
-        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            TextView textView = (TextView) holder.itemView;
-            textView.setText(getItem(position));
-        }
-
-        @Override
-        public long getHeaderId(int position) {
-            if (position == 0) {
-                return -1;
-            } else {
-                return getItem(position).charAt(0);
-            }
-        }
-
-        @Override
-        public RecyclerView.ViewHolder onCreateHeaderViewHolder(ViewGroup parent) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.view_header, parent, false);
-            return new RecyclerView.ViewHolder(view) {
-            };
-        }
-
-        @Override
-        public void onBindHeaderViewHolder(RecyclerView.ViewHolder holder, int position) {
-            TextView textView = (TextView) holder.itemView;
-            textView.setText(String.valueOf(getItem(position).charAt(0)));
-            holder.itemView.setBackgroundColor(ContextCompat.getColor(getContext(), android.R.color.transparent));
-        }
-
-    }
 }
