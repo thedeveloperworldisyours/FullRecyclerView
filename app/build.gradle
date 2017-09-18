@@ -48,7 +48,7 @@ android {
 }
 
 dependencies {
-    
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -80,4 +80,7 @@ dependencies {
 
     // Index
     compile 'com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.6'
+
+    // Contacts
+    compile "com.github.edsilfer:sticky-index:$rootProject.stickyindex"
 }

@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.thedeveloperworldisyours.fullrecycleview.addfavorites.AddFavoritesFragment;
 import com.thedeveloperworldisyours.fullrecycleview.animation.AnimationFragment;
+import com.thedeveloperworldisyours.fullrecycleview.contacts.ContactsFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
@@ -116,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_section_with_line:
                 mFragment = SectionWithLineFragment.newInstance();
+                break;
+
+            case R.id.main_menu_contacts:
+                mFragment = ContactsFragment.newInstance();
                 break;
 
             default:

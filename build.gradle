@@ -27,5 +27,6 @@ task clean(type: Delete) {
 ext {
     butterknife = '8.4.0'
     glide = '4.0.0-RC1'
+    stickyindex = '1.2.1'
 
 }

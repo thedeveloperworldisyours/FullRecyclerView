@@ -58,6 +58,10 @@
         android:title="@string/main_menu_section_with_line" />
 
     <item
+        android:id="@+id/main_menu_contacts"
+        android:title="@string/main_menu_contacts" />
+
+    <item
         android:id="@+id/main_menu_add_item"
         android:icon="@android:drawable/ic_menu_add"
         android:title="@string/main_menu_vertical_list"

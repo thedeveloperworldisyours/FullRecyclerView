@@ -33,6 +33,7 @@
     <string name="main_menu_indexed">Indexed</string>
     <string name="main_menu_add_favorites">Add Favorites</string>
     <string name="main_menu_section_with_line">Section with line</string>
+    <string name="main_menu_contacts">Contacts</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
