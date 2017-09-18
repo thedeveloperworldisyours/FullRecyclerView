@@ -20,6 +20,7 @@ import com.thedeveloperworldisyours.fullrecycleview.sections.SectionFragment;
 import com.thedeveloperworldisyours.fullrecycleview.sectionwithline.SectionWithLineFragment;
 import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.snap.SnapFragment;
+import com.thedeveloperworldisyours.fullrecycleview.stickyheader.StickyHeaderFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
@@ -119,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
                 mFragment = SectionWithLineFragment.newInstance();
                 break;
 
-            case R.id.main_menu_contacts:
-                mFragment = ContactsFragment.newInstance();
+            case R.id.main_menu_sticky_header:
+                mFragment = StickyHeaderFragment.newInstance();
                 break;
 
             default:

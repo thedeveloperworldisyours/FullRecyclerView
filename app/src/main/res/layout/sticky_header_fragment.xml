@@ -5,36 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/buttons_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="18dp"
-        android:paddingTop="18dp">
-
-        <Button
-            android:id="@+id/button_update"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/sticky_header_button_update" />
-
-        <ToggleButton
-            android:id="@+id/button_is_reverse"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOff="@string/sticky_header_button_reverse"
-            android:textOn="@string/sticky_header_button_reverse" />
-
-    </LinearLayout>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/buttons_container"
         android:background="#ffbef0ff"
         android:clipToPadding="true"
         android:padding="16dp"

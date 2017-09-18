@@ -5,7 +5,9 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:orientation="horizontal"
-    android:padding="@dimen/spacing_small"
+    android:paddingLeft="50dp"
+    android:paddingBottom="@dimen/spacing_small"
+    android:paddingTop="@dimen/spacing_small"
     android:textSize="14sp"
     tools:context=".MainActivity"
     tools:text="Aardvark" />

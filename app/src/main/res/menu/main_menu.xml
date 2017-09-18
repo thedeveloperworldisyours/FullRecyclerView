@@ -57,9 +57,8 @@
         android:id="@+id/main_menu_section_with_line"
         android:title="@string/main_menu_section_with_line" />
 
-    <item
-        android:id="@+id/main_menu_contacts"
-        android:title="@string/main_menu_contacts" />
+    <item android:id="@+id/main_menu_sticky_header"
+        android:title="@string/main_menu_sticky_header"/>
 
     <item
         android:id="@+id/main_menu_add_item"
