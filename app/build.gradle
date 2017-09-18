@@ -83,4 +83,7 @@ dependencies {
 
     // Contacts
     compile "com.github.edsilfer:sticky-index:$rootProject.stickyindex"
+
+    // Sticky
+    compile "com.timehop.stickyheadersrecyclerview:library:$rootProject.stickyheadersrecyclerview"
 }
