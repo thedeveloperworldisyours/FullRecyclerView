@@ -97,7 +97,6 @@ public class SectionFragment extends Fragment {
         return results;
     }
 
-
     public void getListIndexed(List<String> fruitList) {
 
         this.fruits = fruitList;
