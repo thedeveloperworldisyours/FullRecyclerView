@@ -45,7 +45,6 @@ public class StickyHeaderFragment extends Fragment {
 
         // Set adapter populated with example dummy data
         final AnimalsHeadersAdapter adapter = new AnimalsHeadersAdapter(getActivity());
-        adapter.add("");
         adapter.addAll(getDummyDataSet());
         recyclerView.setAdapter(adapter);
 
