@@ -27,7 +27,7 @@ public class AnimalsHeadersAdapter extends AnimalsAdapter<RecyclerView.ViewHolde
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.view_item, parent, false);
+                .inflate(R.layout.sticky_item, parent, false);
         return new RecyclerView.ViewHolder(view) {
         };
     }
@@ -46,7 +46,7 @@ public class AnimalsHeadersAdapter extends AnimalsAdapter<RecyclerView.ViewHolde
     @Override
     public RecyclerView.ViewHolder onCreateHeaderViewHolder(ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.view_header, parent, false);
+                .inflate(R.layout.sticky_header, parent, false);
         return new RecyclerView.ViewHolder(view) {
         };
     }

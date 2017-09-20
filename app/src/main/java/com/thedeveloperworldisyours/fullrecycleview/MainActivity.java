@@ -24,6 +24,7 @@ import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
 public class MainActivity extends AppCompatActivity {
+
     Fragment mFragment;
     VerticalFragment mVerticalFragment;
 
