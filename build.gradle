@@ -29,4 +29,5 @@ ext {
     glide = '4.0.0-RC1'
     stickyindex = '1.2.1'
     stickyheadersrecyclerview= '0.4.3'
+    constraint = '1.0.2'
 }

@@ -86,4 +86,7 @@ dependencies {
 
     // Sticky
     compile "com.timehop.stickyheadersrecyclerview:library:$rootProject.stickyheadersrecyclerview"
+
+    //Constraint
+    compile "com.android.support.constraint:constraint-layout:$rootProject.constraint"
 }

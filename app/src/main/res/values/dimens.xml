@@ -20,4 +20,9 @@
     <dimen name="spacing_large">16dp</dimen>
     <dimen name="spacing_huge">32dp</dimen>
     <dimen name="spacing_extra_huge">64dp</dimen>
+
+    <dimen name="contact_margin_left">50dp</dimen>
+    <dimen name="contact_size_profile_image">40dp</dimen>
+    <dimen name="contact_size_text">30sp</dimen>
+
 </resources>
