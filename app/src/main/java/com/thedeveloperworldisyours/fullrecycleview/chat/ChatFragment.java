@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.thedeveloperworldisyours.fullrecycleview.chat.VerticalData;
 import com.thedeveloperworldisyours.fullrecycleview.R;
 
 import java.util.ArrayList;
@@ -52,11 +51,22 @@ public class ChatFragment extends Fragment {
         return view;
     }
 
-    private ArrayList<VerticalData> getDataSet() {
+    private ArrayList<ChatData> getDataSet() {
         ArrayList results = new ArrayList<>();
-        for (int index = 0; index < 20; index++) {
-            VerticalData obj = new VerticalData("Hello Text " + index,
-                    "22:01 ");
+        ChatData obj;
+        obj = new ChatData(0, "", "23 December ");
+        results.add(0, obj);
+        for (int index = 1; index < 20; index++) {
+
+            if ((index & 1) == 0) {
+
+                obj = new ChatData(2, "Hello Text " + index,
+                        "22:01 ");
+            } else {
+
+                obj = new ChatData(1, "Hello Text " + index,
+                        "22:01 ");
+            }
             results.add(index, obj);
         }
         return results;

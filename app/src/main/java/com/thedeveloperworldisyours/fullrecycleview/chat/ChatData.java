@@ -4,28 +4,29 @@ package com.thedeveloperworldisyours.fullrecycleview.chat;
  * Created by javierg on 25/01/2017.
  */
 
-public class VerticalData {
+public class ChatData {
+    private int element;
     private String mTitle;
-    private String mSubTitle;
+    private String mTime;
 
-    VerticalData(String title, String subTitle){
-        mTitle = title;
-        mSubTitle = subTitle;
+
+    public ChatData(int element, String mTitle, String mSubTitle) {
+        this.element = element;
+        this.mTitle = mTitle;
+        this.mTime = mSubTitle;
     }
 
-    public String getmTitle() {
+    public int getElement() {
+        return element;
+    }
+
+    public String getTitle() {
         return mTitle;
     }
 
-    public void setmTitle(String mTitle) {
-        this.mTitle = mTitle;
+
+    public String getTime() {
+        return mTime;
     }
 
-    public String getmSubTitle() {
-        return mSubTitle;
-    }
-
-    public void setmSubTitle(String mSubTitle) {
-        this.mSubTitle = mSubTitle;
-    }
 }
