@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.thedeveloperworldisyours.fullrecycleview.addfavorites.AddFavoritesFragment;
 import com.thedeveloperworldisyours.fullrecycleview.animation.AnimationFragment;
+import com.thedeveloperworldisyours.fullrecycleview.chat.ChatFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragGridFragment;
 import com.thedeveloperworldisyours.fullrecycleview.dragandswipe.DragAndSwipeListFragment;
 import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragment;
@@ -124,6 +125,10 @@ public class MainActivity extends AppCompatActivity {
                 mFragment = StickyHeaderFragment.newInstance();
                 break;
 
+            case R.id.main_menu_chat:
+                mFragment = ChatFragment.newInstance();
+                break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -135,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
     public void addFragment() {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content, mFragment)
-                .addToBackStack(null)
+                .disallowAddToBackStack()
                 .commit();
 
     }

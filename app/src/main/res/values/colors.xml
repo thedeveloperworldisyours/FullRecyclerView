@@ -5,4 +5,7 @@
     <color name="colorAccent">#b72d28</color>
 
     <color name="colorAddFavoritesSection">#FFCC80</color>
+    <color name="colorBackgroundDark">#ECECEC</color>
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorBackground">@android:color/white</color>
 </resources>
