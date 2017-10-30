@@ -63,6 +63,9 @@
     <item android:id="@+id/main_menu_chat"
         android:title="@string/main_menu_chat" />
 
+    <item android:id="@+id/main_menu_update_data"
+        android:title="@string/main_menu_update_data" />
+
     <item
         android:id="@+id/main_menu_add_item"
         android:icon="@android:drawable/ic_menu_add"

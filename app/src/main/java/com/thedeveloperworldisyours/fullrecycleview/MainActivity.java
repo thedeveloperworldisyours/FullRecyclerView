@@ -22,6 +22,7 @@ import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
 import com.thedeveloperworldisyours.fullrecycleview.snap.SnapFragment;
 import com.thedeveloperworldisyours.fullrecycleview.stickyheader.StickyHeaderFragment;
 import com.thedeveloperworldisyours.fullrecycleview.swipe.SwipeListFragment;
+import com.thedeveloperworldisyours.fullrecycleview.updateData.UpdateDataFragment;
 import com.thedeveloperworldisyours.fullrecycleview.vertical.VerticalFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -127,6 +128,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_chat:
                 mFragment = ChatFragment.newInstance();
+                break;
+
+            case R.id.main_menu_update_data:
+                mFragment = UpdateDataFragment.newInstance();
                 break;
 
             default:

@@ -35,6 +35,7 @@
     <string name="main_menu_section_with_line">Section with line</string>
     <string name="main_menu_sticky_header">Sticky header</string>
     <string name="main_menu_chat">Chat</string>
+    <string name="main_menu_update_data">Update data</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
