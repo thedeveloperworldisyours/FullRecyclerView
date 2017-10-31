@@ -51,10 +51,10 @@ public class UpdateDataAdapter extends RecyclerView
 
         @Override
         public void onClick(View v) {
-            mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
             if (selectedItems.get(getAdapterPosition(), false)) {
                 selectedItems.delete(getAdapterPosition());
                 mBackground.setSelected(false);
+                mLabel.setTextColor(ContextCompat.getColor(mContext, android.R.color.black));
             } else {
                 switch (sModo) {
                     case SINGLE:
@@ -96,7 +96,11 @@ public class UpdateDataAdapter extends RecyclerView
     @Override
     public void onBindViewHolder(UpdateDataAdapter.DataObjectHolder holder, int position) {
         holder.mLabel.setText(mDataset.get(position).getmTitle());
-        holder.mLabel.setTextColor(ContextCompat.getColor(mContext, android.R.color.black));
+        if (selectedItems.get(position)) {
+            holder.mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
+        } else {
+            holder.mLabel.setTextColor(ContextCompat.getColor(mContext, android.R.color.black));
+        }
         holder.mDateTime.setText(mDataset.get(position).getmSubTitle());
         holder.mBackground.setSelected(selectedItems.get(position, false));
     }
