@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     Fragment mFragment;
     VerticalFragment mVerticalFragment;
+    UpdateDataFragment mUpdateDataFragment;
+
+    private static final int MULTIPLE = 0;
+    private static final int SINGLE = 1;
+    private int mMode = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +53,18 @@ public class MainActivity extends AppCompatActivity {
 
         inflater.inflate(R.menu.main_menu, menu);
         MenuItem addItem = menu.findItem(R.id.main_menu_add_item);
+        MenuItem mode = menu.findItem(R.id.main_menu_changes_mode);
 
         if (mFragment instanceof VerticalFragment) {
             addItem.setVisible(true);
         } else {
             addItem.setVisible(false);
+        }
+
+        if (mFragment instanceof UpdateDataFragment) {
+            mode.setVisible(true);
+        } else {
+            mode.setVisible(false);
         }
 
         return super.onCreateOptionsMenu(menu);
@@ -81,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_vertical_list:
                 mFragment = VerticalFragment.newInstance();
+                mVerticalFragment = (VerticalFragment) mFragment;
                 break;
 
             case R.id.main_menu_expandable:
@@ -132,14 +145,27 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_update_data:
                 mFragment = UpdateDataFragment.newInstance();
+                mUpdateDataFragment = (UpdateDataFragment) mFragment;
                 break;
-
+            case R.id.main_menu_changes_mode:
+                updateMenuTitles(item);
             default:
                 return super.onOptionsItemSelected(item);
         }
 
         addFragment();
         return true;
+    }
+
+    private void updateMenuTitles(MenuItem menuItem) {
+        if (mMode == MULTIPLE) {
+            menuItem.setTitle(getResources().getString(R.string.main_menu_update_data_multiple));
+            mMode = SINGLE;
+        } else {
+            menuItem.setTitle(getResources().getString(R.string.main_menu_update_data_single));
+            mMode = MULTIPLE;
+        }
+        mUpdateDataFragment.changeMode(mMode);
     }
 
     public void addFragment() {

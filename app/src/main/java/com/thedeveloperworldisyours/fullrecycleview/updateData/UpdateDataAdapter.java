@@ -3,13 +3,15 @@ package com.thedeveloperworldisyours.fullrecycleview.updateData;
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
+import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleRecyclerViewAdapter;
 
 import java.util.ArrayList;
 
@@ -22,36 +24,63 @@ public class UpdateDataAdapter extends RecyclerView
         .DataObjectHolder> {
 
     private ArrayList<UpdateData> mDataset;
-    private static UpdateDataAdapter.MyClickListener sClickListener;
-    int mPosition = -1;
-    private Context mContext;
+    private static Context mContext;
+    private static int mPosition;
+    private static SparseBooleanArray selectedItems;
+    private static UpdateDataClickListener sClickListener;
+    private static final int MULTIPLE = 0;
+    private static final int SINGLE = 1;
+    private static int sModo = 0;
 
     static class DataObjectHolder extends RecyclerView.ViewHolder
             implements View
             .OnClickListener {
         TextView mLabel;
         TextView mDateTime;
+        LinearLayout mBackground;
+
 
         DataObjectHolder(View itemView) {
             super(itemView);
             mLabel = (TextView) itemView.findViewById(R.id.vertical_list_item_title);
             mDateTime = (TextView) itemView.findViewById(R.id.vertical_list_item_subtitle);
+            mBackground = (LinearLayout) itemView.findViewById(R.id.vertical_list_item_background);
             itemView.setOnClickListener(this);
+
         }
 
         @Override
         public void onClick(View v) {
-            sClickListener.onItemClick(getAdapterPosition(), v);
+            mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
+            if (selectedItems.get(getAdapterPosition(), false)) {
+                selectedItems.delete(getAdapterPosition());
+                mBackground.setSelected(false);
+            } else {
+                switch (sModo) {
+                    case SINGLE:
+                        selectedItems.put(mPosition, false);
+                        break;
+                    case MULTIPLE:
+                    default:
+                        break;
+                }
+                mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
+                selectedItems.put(getAdapterPosition(), true);
+                mBackground.setSelected(true);
+            }
+            sClickListener.onItemClick(getAdapterPosition());
         }
     }
 
-    void setOnItemClickListener(UpdateDataAdapter.MyClickListener myClickListener) {
-        this.sClickListener = myClickListener;
+    void setOnItemClickListener(UpdateDataClickListener clickListener) {
+        sClickListener = clickListener;
     }
 
-    UpdateDataAdapter(ArrayList<UpdateData> myDataset, Context context) {
+    UpdateDataAdapter(ArrayList<UpdateData> myDataset, Context context, int modo) {
         mDataset = myDataset;
         mContext = context;
+        selectedItems = new SparseBooleanArray();
+        sModo = modo;
     }
 
     @Override
@@ -69,16 +98,7 @@ public class UpdateDataAdapter extends RecyclerView
         holder.mLabel.setText(mDataset.get(position).getmTitle());
         holder.mLabel.setTextColor(ContextCompat.getColor(mContext, android.R.color.black));
         holder.mDateTime.setText(mDataset.get(position).getmSubTitle());
-        if ((mPosition != -1) && (mPosition == position)) {
-            Log.d("onBindViewHolder", position+"");
-            holder.mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
-            mPosition = -1;
-        }
-    }
-
-    public void selected(int position) {
-        mPosition = position;
-        notifyDataSetChanged();
+        holder.mBackground.setSelected(selectedItems.get(position, false));
     }
 
     @Override
@@ -86,8 +106,26 @@ public class UpdateDataAdapter extends RecyclerView
         return mDataset.size();
     }
 
-    interface MyClickListener {
-        void onItemClick(int position, View v);
+    public void selected(int position) {
+        switch (sModo) {
+            case SINGLE:
+                mPosition = position;
+                notifyDataSetChanged();
+                break;
+            case MULTIPLE:
+            default:
+                break;
+        }
+    }
+
+    public void changeMode(int modo) {
+        sModo = modo;
+        selectedItems.clear();
+        notifyDataSetChanged();
+    }
+
+    interface UpdateDataClickListener {
+        void onItemClick(int position);
     }
 
 }

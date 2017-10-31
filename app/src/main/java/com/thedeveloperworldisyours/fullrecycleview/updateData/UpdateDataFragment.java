@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
 import com.thedeveloperworldisyours.fullrecycleview.common.DividerVerticalItemDecoration;
-import com.thedeveloperworldisyours.fullrecycleview.vertical.*;
 
 import java.util.ArrayList;
 
@@ -21,13 +20,14 @@ import butterknife.ButterKnife;
  * Created by javierg on 30/10/2017.
  */
 
-public class UpdateDataFragment extends Fragment implements UpdateDataAdapter.MyClickListener {
+public class UpdateDataFragment extends Fragment implements UpdateDataAdapter.UpdateDataClickListener {
 
     @BindView(R.id.update_fragment_recycler_view)
     RecyclerView mRecyclerView;
 
     private UpdateDataAdapter mAdapter;
-    private static String LOG_TAG = "VerticalFragment-RecyclerViewActivity";
+
+    private static final int MULTIPLE = 0;
 
     public UpdateDataFragment() {
         // Required empty public constructor
@@ -50,7 +50,7 @@ public class UpdateDataFragment extends Fragment implements UpdateDataAdapter.My
         mRecyclerView.setHasFixedSize(true);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        mAdapter = new UpdateDataAdapter(getDataSet(), getActivity());
+        mAdapter = new UpdateDataAdapter(getDataSet(), getActivity(), MULTIPLE);
         mRecyclerView.setAdapter(mAdapter);
         RecyclerView.ItemDecoration itemDecoration =
                 new DividerVerticalItemDecoration(getActivity());
@@ -70,8 +70,12 @@ public class UpdateDataFragment extends Fragment implements UpdateDataAdapter.My
     }
 
     @Override
-    public void onItemClick(int position, View v) {
+    public void onItemClick(int position) {
         mAdapter.selected(position);
+    }
+
+    public void changeMode(int modo) {
+        mAdapter.changeMode(modo);
     }
 
 }

@@ -36,6 +36,8 @@
     <string name="main_menu_sticky_header">Sticky header</string>
     <string name="main_menu_chat">Chat</string>
     <string name="main_menu_update_data">Update data</string>
+    <string name="main_menu_update_data_single">Change to Single</string>
+    <string name="main_menu_update_data_multiple">Change to Multiple</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>
