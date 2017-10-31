@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 mUpdateDataFragment = (UpdateDataFragment) mFragment;
                 break;
             case R.id.main_menu_changes_mode:
-                updateMenuTitles(item);
+                updateMenuTitles();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -157,12 +157,22 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    private void updateMenuTitles(MenuItem menuItem) {
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem mode = menu.findItem(R.id.main_menu_changes_mode);
         if (mMode == MULTIPLE) {
-            menuItem.setTitle(getResources().getString(R.string.main_menu_update_data_multiple));
+            mode.setTitle(getResources().getString(R.string.main_menu_update_data_single));
+        } else {
+            mode.setTitle(getResources().getString(R.string.main_menu_update_data_multiple));
+        }
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    private void updateMenuTitles() {
+        invalidateOptionsMenu();
+        if (mMode == MULTIPLE) {
             mMode = SINGLE;
         } else {
-            menuItem.setTitle(getResources().getString(R.string.main_menu_update_data_single));
             mMode = MULTIPLE;
         }
         mUpdateDataFragment.changeMode(mMode);
