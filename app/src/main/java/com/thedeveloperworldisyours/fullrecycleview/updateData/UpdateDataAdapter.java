@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
-import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleRecyclerViewAdapter;
 
 import java.util.ArrayList;
 
@@ -23,10 +22,10 @@ public class UpdateDataAdapter extends RecyclerView
         .Adapter<UpdateDataAdapter
         .DataObjectHolder> {
 
-    private ArrayList<UpdateData> mDataset;
-    private static Context mContext;
-    private static int mPosition;
-    private static SparseBooleanArray selectedItems;
+    private ArrayList<UpdateData> mDataSet;
+    private static Context sContext;
+    private static int sPosition;
+    private static SparseBooleanArray sSelectedItems;
     private static UpdateDataClickListener sClickListener;
     private static final int MULTIPLE = 0;
     private static final int SINGLE = 1;
@@ -51,21 +50,21 @@ public class UpdateDataAdapter extends RecyclerView
 
         @Override
         public void onClick(View v) {
-            if (selectedItems.get(getAdapterPosition(), false)) {
-                selectedItems.delete(getAdapterPosition());
+            if (sSelectedItems.get(getAdapterPosition(), false)) {
+                sSelectedItems.delete(getAdapterPosition());
                 mBackground.setSelected(false);
-                mLabel.setTextColor(ContextCompat.getColor(mContext, android.R.color.black));
+                mLabel.setTextColor(ContextCompat.getColor(sContext, android.R.color.black));
             } else {
                 switch (sModo) {
                     case SINGLE:
-                        selectedItems.put(mPosition, false);
+                        sSelectedItems.put(sPosition, false);
                         break;
                     case MULTIPLE:
                     default:
                         break;
                 }
-                mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
-                selectedItems.put(getAdapterPosition(), true);
+                mLabel.setTextColor(ContextCompat.getColor(sContext, R.color.colorAccent));
+                sSelectedItems.put(getAdapterPosition(), true);
                 mBackground.setSelected(true);
             }
             sClickListener.onItemClick(getAdapterPosition());
@@ -77,9 +76,9 @@ public class UpdateDataAdapter extends RecyclerView
     }
 
     UpdateDataAdapter(ArrayList<UpdateData> myDataset, Context context, int modo) {
-        mDataset = myDataset;
-        mContext = context;
-        selectedItems = new SparseBooleanArray();
+        mDataSet = myDataset;
+        sContext = context;
+        sSelectedItems = new SparseBooleanArray();
         sModo = modo;
     }
 
@@ -95,25 +94,25 @@ public class UpdateDataAdapter extends RecyclerView
 
     @Override
     public void onBindViewHolder(UpdateDataAdapter.DataObjectHolder holder, int position) {
-        holder.mLabel.setText(mDataset.get(position).getmTitle());
-        if (selectedItems.get(position)) {
-            holder.mLabel.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
+        holder.mLabel.setText(mDataSet.get(position).getmTitle());
+        if (sSelectedItems.get(position)) {
+            holder.mLabel.setTextColor(ContextCompat.getColor(sContext, R.color.colorAccent));
         } else {
-            holder.mLabel.setTextColor(ContextCompat.getColor(mContext, android.R.color.black));
+            holder.mLabel.setTextColor(ContextCompat.getColor(sContext, android.R.color.black));
         }
-        holder.mDateTime.setText(mDataset.get(position).getmSubTitle());
-        holder.mBackground.setSelected(selectedItems.get(position, false));
+        holder.mDateTime.setText(mDataSet.get(position).getmSubTitle());
+        holder.mBackground.setSelected(sSelectedItems.get(position, false));
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.size();
+        return mDataSet.size();
     }
 
     public void selected(int position) {
         switch (sModo) {
             case SINGLE:
-                mPosition = position;
+                sPosition = position;
                 notifyDataSetChanged();
                 break;
             case MULTIPLE:
@@ -124,7 +123,7 @@ public class UpdateDataAdapter extends RecyclerView
 
     public void changeMode(int modo) {
         sModo = modo;
-        selectedItems.clear();
+        sSelectedItems.clear();
         notifyDataSetChanged();
     }
 
