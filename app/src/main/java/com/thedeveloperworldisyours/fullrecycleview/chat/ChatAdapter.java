@@ -33,8 +33,8 @@ public class ChatAdapter extends RecyclerView
         @BindView(R.id.receive_text_textView)
         TextView mReceiverText;
 
-        @BindView(R.id.receive_time_textView)
-        TextView mReceiverTime;
+//        @BindView(R.id.receive_time_textView)
+//        TextView mReceiverTime;
 
         ReceiveObjectHolder(View itemView) {
             super(itemView);
@@ -56,8 +56,8 @@ public class ChatAdapter extends RecyclerView
         @BindView(R.id.send_text_textView)
         TextView mSendText;
 
-        @BindView(R.id.send_time_textView)
-        TextView mSendTime;
+//        @BindView(R.id.send_time_textView)
+//        TextView mSendTime;
 
         SendObjectHolder(View itemView) {
             super(itemView);
@@ -117,13 +117,13 @@ public class ChatAdapter extends RecyclerView
             case RECEIVE_MESSAGE:
                 ReceiveObjectHolder receiveObjectHolder = (ReceiveObjectHolder) holder;
                 receiveObjectHolder.mReceiverText.setText(mDataset.get(position).getTitle());
-                receiveObjectHolder.mReceiverTime.setText(mDataset.get(position).getTime());
+//                receiveObjectHolder.mReceiverTime.setText(mDataset.get(position).getTime());
                 break;
 
             case SEND_MESSAGE:
                 SendObjectHolder sendObjectHolder = (SendObjectHolder) holder;
                 sendObjectHolder.mSendText.setText(mDataset.get(position).getTitle());
-                sendObjectHolder.mSendTime.setText(mDataset.get(position).getTime());
+//                sendObjectHolder.mSendTime.setText(mDataset.get(position).getTime());
                 break;
 
             case TIME:
