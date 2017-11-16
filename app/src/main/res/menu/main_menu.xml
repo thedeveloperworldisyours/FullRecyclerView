@@ -57,14 +57,21 @@
         android:id="@+id/main_menu_section_with_line"
         android:title="@string/main_menu_section_with_line" />
 
-    <item android:id="@+id/main_menu_sticky_header"
-        android:title="@string/main_menu_sticky_header"/>
+    <item
+        android:id="@+id/main_menu_sticky_header"
+        android:title="@string/main_menu_sticky_header" />
 
-    <item android:id="@+id/main_menu_chat"
+    <item
+        android:id="@+id/main_menu_chat"
         android:title="@string/main_menu_chat" />
 
-    <item android:id="@+id/main_menu_update_data"
+    <item
+        android:id="@+id/main_menu_update_data"
         android:title="@string/main_menu_update_data" />
+
+    <item
+        android:id="@+id/main_menu_multiple_clicks"
+        android:title="@string/main_menu_multiple_clicks" />
 
     <item
         android:id="@+id/main_menu_add_item"
@@ -76,5 +83,6 @@
         android:id="@+id/main_menu_changes_mode"
         android:title="@string/main_menu_update_data_single"
         app:showAsAction="always" />
+
 
 </menu>

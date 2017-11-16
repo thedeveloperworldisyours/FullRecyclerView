@@ -38,6 +38,7 @@
     <string name="main_menu_update_data">Update data</string>
     <string name="main_menu_update_data_single">Change to Single</string>
     <string name="main_menu_update_data_multiple">Change to Multiple</string>
+    <string name="main_menu_multiple_clicks">Multiple clicks</string>
 
     <string name="swipe_recycler_view_adapter_delete">Deleted</string>
     <string name="swipe_recycler_view_adapter_edit">Ed</string>

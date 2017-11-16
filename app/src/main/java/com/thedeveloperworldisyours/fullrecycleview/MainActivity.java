@@ -16,6 +16,7 @@ import com.thedeveloperworldisyours.fullrecycleview.expandable.ExpandableFragmen
 import com.thedeveloperworldisyours.fullrecycleview.horizontal.HorizontalFragment;
 import com.thedeveloperworldisyours.fullrecycleview.indexed.IndexedFragment;
 import com.thedeveloperworldisyours.fullrecycleview.multiple.MultipleFragment;
+import com.thedeveloperworldisyours.fullrecycleview.multipleclicks.MultipleClicksFragment;
 import com.thedeveloperworldisyours.fullrecycleview.sections.SectionFragment;
 import com.thedeveloperworldisyours.fullrecycleview.sectionwithline.SectionWithLineFragment;
 import com.thedeveloperworldisyours.fullrecycleview.single.SingleFragment;
@@ -141,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_menu_chat:
                 mFragment = ChatFragment.newInstance();
+                break;
+
+            case R.id.main_menu_multiple_clicks:
+                mFragment = MultipleClicksFragment.newInstance();
                 break;
 
             case R.id.main_menu_update_data:
