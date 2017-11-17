@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#cfcfcf</color>
     <color name="colorAccent">#b72d28</color>
 
+    <color name="colorAccentDark">#781e1a</color>
     <color name="colorAddFavoritesSection">#FFCC80</color>
     <color name="colorBackgroundDark">#ECECEC</color>
     <color name="colorWhite">@android:color/white</color>

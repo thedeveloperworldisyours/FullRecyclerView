@@ -1,12 +1,17 @@
 package com.thedeveloperworldisyours.fullrecycleview.multipleclicks;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.thedeveloperworldisyours.fullrecycleview.R;
 import com.thedeveloperworldisyours.fullrecycleview.common.DividerVerticalItemDecoration;
@@ -78,6 +83,10 @@ public class MultipleClicksFragment extends Fragment implements MultipleClicksAd
         MultipleClickData two2 = new MultipleClickData("One", "Two", "Three");
         MultipleClickData three2 = new MultipleClickData("One", "Two", "Three");
 
+        MultipleClickData one3 = new MultipleClickData("One", "Two", "Three");
+        MultipleClickData two3 = new MultipleClickData("One", "Two", "Three");
+        MultipleClickData three3 = new MultipleClickData("One", "Two", "Three");
+
         list.add(one);
         list.add(two);
         list.add(three);
@@ -90,23 +99,59 @@ public class MultipleClicksFragment extends Fragment implements MultipleClicksAd
         list.add(two2);
         list.add(three2);
 
+        list.add(one3);
+        list.add(two3);
+        list.add(three3);
+
         return list;
 
     }
 
     @Override
     public void onItemClickOne(int position, View v) {
-
+        showDialog(0);
     }
 
     @Override
     public void onItemClickTwo(int position, View v) {
-
+        showDialog(1);
     }
 
     @Override
     public void onItemClickThree(int position, View v) {
+        showDialog(2);
+    }
 
+    public void showDialog(int type) {
+
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.multiple_clicks_dialog);
+
+        ImageView imageView = (ImageView) dialog.findViewById(R.id.dialgo_multiple_clicks_close_imageView);
+        TextView oneText = (TextView) dialog.findViewById(R.id.dialog_multiple_clicks_one_textView);
+        TextView twoText = (TextView) dialog.findViewById(R.id.dialog_multiple_clicks_two_textView);
+        TextView threeText = (TextView) dialog.findViewById(R.id.dialog_multiple_clicks_three_textView);
+
+        switch (type) {
+            case 0:
+                oneText.setTextColor(ContextCompat.getColor(getActivity(), android.R.color.black));
+                oneText.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.rectangle_multiple_clicks_blue));
+                break;
+            case 1:
+                twoText.setTextColor(ContextCompat.getColor(getActivity(), android.R.color.black));
+                twoText.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.rectangle_multiple_clicks_blue));
+                break;
+            case 2:
+                threeText.setTextColor(ContextCompat.getColor(getActivity(), android.R.color.black));
+                threeText.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.rectangle_multiple_clicks_blue));
+                break;
+        }
+
+        imageView.setOnClickListener((View view) -> dialog.dismiss());
+
+        dialog.setCancelable(true);
+        dialog.show();
     }
 
 }

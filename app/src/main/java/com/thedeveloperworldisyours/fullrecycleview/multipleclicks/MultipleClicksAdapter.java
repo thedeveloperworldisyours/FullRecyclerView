@@ -44,7 +44,7 @@ public class MultipleClicksAdapter extends RecyclerView
                     sClickListener.onItemClickTwo(getAdapterPosition(), mTwo));
 
             mThree.setOnClickListener((View v) ->
-                    sClickListener.onItemClickTwo(getAdapterPosition(), mThree));
+                    sClickListener.onItemClickThree(getAdapterPosition(), mThree));
         }
 
     }
