@@ -10,7 +10,11 @@
         android:id="@+id/send_background_imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/rectangle_call"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="78dp"
+        android:src="@drawable/rectangle_chat_bubble"
         app:layout_constraintBottom_toBottomOf="@+id/send_text_textView"
         app:layout_constraintLeft_toLeftOf="@+id/send_text_textView"
         app:layout_constraintRight_toRightOf="@+id/send_text_textView"
@@ -23,7 +27,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
-        android:padding="4dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="98dp"
+        android:paddingRight="18dp"
+        android:paddingTop="14dp"
         android:text="TextView"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,4 +51,14 @@
             android:background="@color/colorPrimary"
             android:rotation="45" />
     </RelativeLayout>
+    <TextView
+            android:id="@+id/send_time_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingRight="38dp"
+            android:text="11:09"
+            android:textColor="@color/colorGrayChat"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/send_text_textView" />
 </android.support.constraint.ConstraintLayout>
