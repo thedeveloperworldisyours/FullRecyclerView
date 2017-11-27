@@ -9,4 +9,7 @@
     <color name="colorBackgroundDark">#ECECEC</color>
     <color name="colorWhite">@android:color/white</color>
     <color name="colorBackground">@android:color/white</color>
+
+    <color name="colorGrayChat">#AEAFAC</color>
+    <color name="colorRedDark">#BC1817</color>
 </resources>
