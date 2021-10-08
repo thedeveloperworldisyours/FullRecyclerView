@@ -1,4 +1,5 @@
 
+**[RecyclerView is deprecated, check FullComposeList](https://github.com/thedeveloperworldisyours/FullComposeList)**
 <p align="center">
  <img src="https://github.com/CabezasGonzalezJavier/FullRecycleView/blob/master/title.png" />
  <h4>This is a compilation of differents kinds and actiones in recyclerView</h4>
